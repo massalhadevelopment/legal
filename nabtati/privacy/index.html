@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نبتتي – Privacy Policy</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+  <h1>نبتتي – Privacy Policy</h1>
+  <p class="meta">Last updated: 13 October 2026 · <a href="#ar">العربية</a></p>
+
+  <p>This policy covers the app "نبتتي – طبيب النباتات" (Nabtati). It explains what the app collects, why, who receives it, how long it is kept and how you can control or delete it. Nabtati identifies plants from your photos, checks a plant's health, gives care information and reminders, and answers questions about your plants with artificial intelligence (AI). It gives general gardening information only. It is not a substitute for a doctor, a vet or a licensed agricultural expert.</p>
+
+  <h2>1. Who we are</h2>
+  <p>The data controller is <strong>MASSALHA FZCO</strong> (developer name Massalha Development), a company registered in the United Arab Emirates ("we", "us"). Contact for privacy questions and requests: <a href="mailto:support@massalhafzco.com">support@massalhafzco.com</a>.</p>
+
+  <h2>2. Summary</h2>
+  <ul>
+    <li>No sign-up is needed. The app creates an anonymous account. Sign in with Apple is optional.</li>
+    <li>When you identify or diagnose a plant, your photos are sent to our server, which stores them in your private folder and sends them to our AI provider, <strong>OpenAI (USA)</strong>, to analyse them.</li>
+    <li>Plant Advisor messages and questions you ask about a plant are also sent to OpenAI. Our server does <strong>not</strong> store your Plant Advisor chat; the chat history stays on your device.</li>
+    <li>My Garden (your plants, nicknames, notes and their photos), reminders and your scan history list stay on your device.</li>
+    <li>The app does not use your GPS location. You pick a city from a list, and we use that city for the weather and local tips.</li>
+    <li>No ads, no tracking, no advertising or analytics SDKs, and we never sell your data.</li>
+  </ul>
+
+  <h2>3. Data that stays on your device</h2>
+  <p>The following is stored on your device and is <strong>not sent to us</strong> (except where a later section says so):</p>
+  <ul>
+    <li>My Garden: your plants, their nicknames, notes, note photos, placement, collections and wishlist.</li>
+    <li>Your care reminders and their schedule.</li>
+    <li>Snap History: the list of your scans, their results and a copy of each photo.</li>
+    <li>Your Plant Advisor chat history.</li>
+    <li>Your settings (city, reminder time and so on), your consent choices, books you bought and your reading progress.</li>
+  </ul>
+  <p>Data on your device can be included in your own device backup (for example iCloud Backup) if you use one; backups are turned off for the Android version. If you turn on "save photos to album", the app saves your plant photos and share cards to your photo library. The light meter takes one small, low-quality picture, measures its brightness on the device and deletes it right away; it is never uploaded. Deleting the app, or deleting your account in the app, removes the app's data from the device (photos you saved to your photo library stay there).</p>
+
+  <h2>4. Your account and purchases</h2>
+  <ul>
+    <li><strong>Anonymous account.</strong> On first launch the app creates an anonymous account with Supabase (servers in Frankfurt, EU). It holds a random user ID and the date it was created, so that purchases, usage limits and your scans work. It does not contain your name or email.</li>
+    <li><strong>Sign in with Apple (optional)</strong> lets you keep your subscription on a new device. The app asks Apple only for your name, not your email. We receive your Apple account ID and, if you choose to share it, your name, which we keep with your account. We also keep an Apple sign-in token, <strong>encrypted</strong>, only so that we can revoke your Apple sign-in when you delete your account. Your garden and scan history are not copied to the account; they stay on your device.</li>
+    <li><strong>Purchases.</strong> Payments are handled by Apple; we never see your card details. RevenueCat (USA) receives your purchase receipts, the products you bought and your anonymous user ID (which is your RevenueCat ID) to manage your subscription and book purchases, and tells our server whether you are a subscriber. To stop one purchase from being shared across many accounts, our server keeps a one-way coded (hashed) usage counter per purchase.</li>
+  </ul>
+
+  <h2>5. Plant photos (identify and diagnose)</h2>
+  <ul>
+    <li>Before your first photo, the app asks for your consent: the photo button says "موافق، التقط صورة" and a line under it explains that the photo is sent to an external AI provider for analysis.</li>
+    <li>When you take or choose a photo, the app first resizes it (long side up to 1024 pixels, JPEG); the resized copy carries no location data. Then 1 to 3 photos are sent to our server.</li>
+    <li>Our server sends the photos to <strong>OpenAI (USA)</strong>, which identifies the plant (or insect, bird, tree and so on) or checks its health. For a health check, your answers to the short questionnaire (indoor or outdoor, light, watering, pot or ground, and the city you picked) are sent too.</li>
+    <li>Our server <strong>stores the photos</strong> in your private folder in Supabase Storage (Frankfurt) and keeps a record of each scan (the kind of scan, the AI result, the plant name, the time). Only our server and your own account can access your folder. We keep them so a retry returns the same result without a second charge, so we can check a result you report (section 8), and to keep the service secure.</li>
+    <li>Scans and their photos are kept <strong>until you delete your account</strong>. Removing a scan from Snap History in the app removes it from your device only; to have a stored scan deleted sooner, email us. Unfinished or failed scan records are deleted after 1 day.</li>
+    <li>OpenAI processes the photos to give the result. It does not use them to train its models and may keep them for up to 30 days to monitor abuse, then deletes them. We send OpenAI a one-way coded (hashed) version of your account ID for abuse detection, never the ID itself, and never your name.</li>
+    <li>Please photograph plants, not people. If a person or other personal details appear in a photo, they are processed and stored like the rest of the photo.</li>
+  </ul>
+
+  <h2>6. Plant Advisor (AI chat)</h2>
+  <ul>
+    <li>Before your first chat the app asks for your consent ("موافق، ابدأ المحادثة") and explains that your messages and your plant's information are sent to an external AI provider.</li>
+    <li>When you send a message, the conversation (your recent messages and the advisor's replies) and information about the plant are sent through our server to <strong>OpenAI (USA)</strong> to write the reply. The plant information is: its species and name, the nickname you gave it, indoor or outdoor, pot or ground, the city you picked, days since the last watering, recently diagnosed problems, a short care summary and the current month. Your notes and photos are never sent.</li>
+    <li>Your latest message is also checked by OpenAI's moderation service to keep the chat safe.</li>
+    <li>Our server does <strong>not</strong> store your chat messages and does not write them to logs. The chat history is kept on your device only, and you can clear it.</li>
+    <li>OpenAI does not use this data to train its models and may keep it for up to 30 days to monitor abuse, then deletes it.</li>
+    <li>Please don't share details that identify you (full name, phone number, address) in the chat.</li>
+  </ul>
+
+  <h2>7. Questions you ask about a plant</h2>
+  <ul>
+    <li>When you ask your own question on a plant's question page, the question and the plant's name are sent through our server to OpenAI, which first checks the question with its moderation service and then writes the answer.</li>
+    <li>To answer the same question faster and at lower cost next time, our server stores the question text and the answer with the plant's species, <strong>without your user ID or any other link to you</strong>. Anyone who later asks the same question about the same plant gets the stored answer. These entries are deleted after 1 year. Because they are not linked to you, we can't find and delete them when you delete your account, so please don't put personal details in a question.</li>
+  </ul>
+
+  <h2>8. Feedback and reports</h2>
+  <p>If you send feedback on a result or a care page (for example "wrong identification", "helpful", a star rating or a comment), or report a Plant Advisor reply, we store: your user ID, the reason, the scan or plant concerned, the name you suggest, your comment and rating, and a copy of the AI result of that scan from our server. For a Plant Advisor report we store the text of the reported reply (never the messages you wrote). We use this to review and improve results. Reports are deleted after <strong>60 days</strong>, or earlier when you delete your account.</p>
+
+  <h2>9. Contact Us</h2>
+  <p>If you write to us in Settings → "تواصل معنا", we store your email address, your message, up to 3 screenshots you attach, and the app version and device platform, so we can answer you. Messages are deleted after <strong>180 days</strong>; screenshots are kept in your private folder until you delete your account. Everything is deleted when you delete your account. If the form can't be sent, the app opens your email app instead. When you email us, we keep the conversation for as long as we need it to handle your request.</p>
+
+  <h2>10. City, weather and local content</h2>
+  <ul>
+    <li>The app has no location permission and never reads your GPS. You pick your city from a list in the app.</li>
+    <li><strong>Weather:</strong> the app sends the fixed coordinates of the city you picked (the city centre, from the app's list) to our server, which gets today's weather from <strong>Apple WeatherKit</strong>. Apple receives only those city coordinates from our server, not your user ID. We don't store this request (the result is cached for 30 minutes per area). Weather data is shown with the Apple Weather mark and a link to Apple's data sources (<a href="https://weatherkit.apple.com/legal-attribution.html">weatherkit.apple.com/legal-attribution.html</a>); the Apple Weather logo is loaded from Apple's server.</li>
+    <li><strong>Monthly tips and plant lists:</strong> the app sends the city and country you picked to our server. For Arab countries outside the Gulf, the city, country and month may be sent to OpenAI to write tips for that place. The result is shared by everyone in that city and contains no personal data.</li>
+  </ul>
+
+  <h2>11. Care pages and reference photos</h2>
+  <p>Plant care pages are written once per plant species (with AI, from our own checked plant data) and shared by every user; only the species name is used, no personal data. Reference photos of plants come from Wikimedia Commons under free licences. Our server downloads them once and serves them from our own storage, so the app never contacts Wikimedia and no data about you is sent to Wikimedia.</p>
+
+  <h2>12. Notifications</h2>
+  <ul>
+    <li>Care reminders, and, if you turned it on at purchase, a reminder 2 days before your free trial or first discounted month ends. They are local notifications created on your device.</li>
+    <li>We have no push notification server and send no marketing notifications.</li>
+    <li>Turn care reminders off in Settings → "إشعارات العناية", or turn all notifications off in your device settings.</li>
+  </ul>
+
+  <h2>13. No ads, no tracking, no analytics</h2>
+  <p>The app shows no ads, does not track you across other companies' apps or websites, does not ask for the iOS tracking permission and contains no advertising or analytics SDKs (no Meta/Facebook, Google Analytics or similar). We don't sell your data and we don't share it with data brokers. The app may show Apple's own rating prompt.</p>
+
+  <h2>14. Why we use your data (legal bases)</h2>
+  <ul>
+    <li><strong>To provide the app and your subscription</strong> (account, purchases, restoring purchases, scans and their storage, weather, tips, answering your messages): performance of our contract with you.</li>
+    <li><strong>Sending your photos, chat messages and questions to the AI provider</strong>: your consent, given on the photo button and the Plant Advisor start button. You can withdraw it in Settings → "السماح بالوصول" → "سحب الموافقة على تحليل الصور".</li>
+    <li><strong>Usage limits, abuse prevention, moderation, security, feedback and reports, the shared question cache</strong>: our legitimate interests in keeping the service safe, affordable and accurate. You can object by emailing us.</li>
+  </ul>
+
+  <h2>15. Who receives your data</h2>
+  <ul>
+    <li><strong>Supabase</strong> (servers in Frankfurt, EU): your account, scan photos and records, usage counters, feedback and reports, Contact Us messages, the encrypted Apple sign-in token, the shared caches.</li>
+    <li><strong>Expo (EAS Hosting)</strong>, which runs on Cloudflare's network: runs our server code; your photos, messages and requests pass through it in transit. Expo also delivers app updates.</li>
+    <li><strong>OpenAI</strong> (USA): analyses photos, writes Plant Advisor replies, answers questions, writes care pages and tips, and checks messages and questions for safety (moderation).</li>
+    <li><strong>RevenueCat</strong> (USA): manages subscriptions and in-app purchases.</li>
+    <li><strong>Apple</strong>: payments, Sign in with Apple, weather (WeatherKit) and the rating prompt.</li>
+  </ul>
+  <p>Our providers process data under their data processing terms and give it protection equal to or stronger than this policy. Our hosting providers keep standard request logs (such as IP address and time) for a limited period under their own retention rules; we do not write your photos, chat messages, questions or contact messages to our logs. We may disclose data if the law requires it.</p>
+
+  <h2>16. International transfers</h2>
+  <p>We are based in the UAE. Your data is stored in the EU (Supabase) and processed in the USA and other countries where OpenAI, RevenueCat, Expo, Cloudflare and Apple operate. Where the law requires it (for example for users in the EU or UK), these transfers rely on the providers' Standard Contractual Clauses or other approved safeguards.</p>
+
+  <h2>17. How long we keep data</h2>
+  <ul>
+    <li>Data on your device: until you delete it, delete your account in the app or delete the app.</li>
+    <li>Anonymous or Apple account (and your name, if you shared it): until you delete your account.</li>
+    <li>Scan photos and scan records: until you delete your account (unfinished or failed scan records: 1 day).</li>
+    <li>Usage counters: 30 days.</li>
+    <li>Feedback and reports: 60 days.</li>
+    <li>Contact Us messages: 180 days; their screenshots: until you delete your account.</li>
+    <li>Questions and answers in the shared cache (not linked to you): 1 year.</li>
+    <li>Encrypted Apple sign-in token: until you delete your account (it is then revoked and deleted).</li>
+    <li>Data at OpenAI: up to 30 days.</li>
+    <li>Purchase records at RevenueCat: until you delete your account. Apple keeps its own transaction records.</li>
+    <li>Plant Advisor chat: never stored on our server.</li>
+    <li>Hosting request logs: a limited period set by each provider.</li>
+  </ul>
+
+  <h2>18. Your rights and choices</h2>
+  <p>Depending on where you live (for example in the EU or UK), you have the right to access, correct, delete or receive a copy of your data, to restrict or object to its use, and to withdraw consent at any time (this does not affect what was done before). You can also complain to your local data protection authority. How to exercise them:</p>
+  <ul>
+    <li><strong>Delete everything:</strong> in the app, Settings → "إدارة الحساب" → "حذف الحساب وكل البيانات" (if you haven't signed in: Settings → "تسجيل الدخول" → "حذف بياناتي من نبتتي"). This permanently deletes your account, all your rows on our server (scans, feedback and reports, Contact Us messages, usage counters), all photos and screenshots in your folder, your RevenueCat purchase records, and revokes your Apple sign-in. It also wipes the app's data, photos and scheduled notifications on your device. It does not cancel an App Store subscription: manage that in your Apple ID settings. Copies kept by OpenAI for up to 30 days and the shared question cache (not linked to you) are not affected.</li>
+    <li><strong>Withdraw AI consent:</strong> Settings → "السماح بالوصول" → "سحب الموافقة على تحليل الصور". Nothing is sent to the AI provider until you agree again.</li>
+    <li><strong>Clear your Plant Advisor chat:</strong> in the chat on your device.</li>
+    <li><strong>Anything else</strong> (for example a copy of your data, or deleting one stored scan): email <a href="mailto:support@massalhafzco.com">support@massalhafzco.com</a>. Because the account is anonymous, we may need details from the app to find your data; in-app deletion is the fastest way. We reply within 30 days.</li>
+  </ul>
+
+  <h2>19. Security</h2>
+  <p>Data is sent over encrypted connections (HTTPS). Server data is protected by access controls: each user's photos are in a private folder that only our server and that user's account can access, and the Apple sign-in token is stored encrypted. No method is 100% secure, so we keep as little data as possible on our servers.</p>
+
+  <h2>20. Children</h2>
+  <p>Nabtati is a general gardening app. It is not directed to children under 13, and we do not knowingly collect personal data from children under 13 (or the minimum age in your country). If you believe a child has sent us personal data, contact us and we will delete it.</p>
+
+  <h2>21. Changes</h2>
+  <p>If this policy changes, we will update the date above and, for important changes, tell you in the app or in the App Store listing before they apply.</p>
+
+  <h2>22. Contact</h2>
+  <p>MASSALHA FZCO, United Arab Emirates · <a href="mailto:support@massalhafzco.com">support@massalhafzco.com</a> · Support page: <a href="/nabtati/support/">legal.massalhafzco.com/nabtati/support</a> · Terms of use: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's standard EULA</a>.</p>
+
+  <hr>
+
+  <section id="ar" dir="rtl" lang="ar">
+    <h1>سياسة الخصوصية لتطبيق نبتتي</h1>
+    <p class="meta">آخر تحديث: 13 أكتوبر 2026</p>
+
+    <p>تشرح هذه السياسة ما يجمعه تطبيق "نبتتي – طبيب النباتات"، ولماذا، ومن يستلمه، ومدة الاحتفاظ به، وكيف تتحكّم به أو تحذفه. يتعرّف نبتتي على النباتات من صورك، ويفحص صحة النبتة، ويقدّم معلومات العناية والتذكيرات، ويجيب عن أسئلتك عن نباتاتك بالذكاء الاصطناعي. يقدّم التطبيق معلومات عامة عن الزراعة فقط، وليس بديلاً عن الطبيب أو الطبيب البيطري أو المختص الزراعي.</p>
+
+    <h2>1. من نحن</h2>
+    <p>المسؤول عن البيانات هو شركة <strong>MASSALHA FZCO</strong> (اسم المطوّر Massalha Development)، وهي شركة مسجّلة في الإمارات العربية المتحدة. للتواصل بخصوص الخصوصية والطلبات: <a href="mailto:support@massalhafzco.com">support@massalhafzco.com</a>.</p>
+
+    <h2>2. الخلاصة</h2>
+    <ul>
+      <li>لا تحتاج إلى التسجيل، فالتطبيق ينشئ حساباً مجهولاً. تسجيل الدخول بحساب Apple اختياري.</li>
+      <li>عندما تتعرّف على نبتة أو تشخّصها، تُرسل صورك إلى خادمنا، الذي يحفظها في مجلدك الخاص ويرسلها إلى مزوّد الذكاء الاصطناعي <strong>OpenAI (الولايات المتحدة)</strong> لتحليلها.</li>
+      <li>رسائلك إلى مستشار النباتات وأسئلتك عن النباتات تُرسل أيضاً إلى OpenAI. خادمنا <strong>لا</strong> يحفظ محادثتك مع المستشار، وسجل المحادثة يبقى على جهازك.</li>
+      <li>حديقتي (نباتاتك وأسماؤها وملاحظاتك وصورها) والتذكيرات وقائمة سجل التصوير تبقى على جهازك.</li>
+      <li>التطبيق لا يستخدم موقعك (GPS). أنت تختار مدينتك من قائمة، ونستخدم هذه المدينة للطقس والنصائح المحلية.</li>
+      <li>لا إعلانات، ولا تتبّع، ولا أدوات إعلانات أو تحليلات، ولا نبيع بياناتك أبداً.</li>
+    </ul>
+
+    <h2>3. بيانات تبقى على جهازك</h2>
+    <p>البيانات التالية تُحفظ على جهازك و<strong>لا تُرسل إلينا</strong> (إلا كما يوضّح قسم لاحق):</p>
+    <ul>
+      <li>حديقتي: نباتاتك، وأسماؤها التي اخترتها، وملاحظاتك وصورها، ومكانها، والمجموعات، وقائمة الأمنيات.</li>
+      <li>تذكيرات العناية ومواعيدها.</li>
+      <li>سجل التصوير: قائمة عمليات التعرّف والتشخيص ونتائجها ونسخة من كل صورة.</li>
+      <li>سجل محادثتك مع مستشار النباتات.</li>
+      <li>إعداداتك (المدينة، وقت التذكير وغيرها)، واختياراتك للموافقة، والكتب التي اشتريتها وتقدّمك في القراءة.</li>
+    </ul>
+    <p>قد تدخل بيانات جهازك في النسخة الاحتياطية الخاصة بك (مثل نسخ iCloud الاحتياطي) إذا كنت تستخدمها، والنسخ الاحتياطي معطّل في نسخة أندرويد. إذا فعّلت "حفظ الصور تلقائياً في الألبوم"، يحفظ التطبيق صور نباتاتك وبطاقات المشاركة في ألبوم الصور. مقياس الضوء يلتقط صورة صغيرة منخفضة الجودة، ويقيس إضاءتها على الجهاز ثم يحذفها فوراً، ولا تُرفع أبداً. حذف التطبيق أو حذف حسابك من داخل التطبيق يزيل بيانات التطبيق من الجهاز (الصور التي حفظتها في ألبوم الصور تبقى فيه).</p>
+
+    <h2>4. حسابك ومشترياتك</h2>
+    <ul>
+      <li><strong>حساب مجهول.</strong> عند أول فتح ينشئ التطبيق حساباً مجهولاً لدى Supabase (خوادم في فرانكفورت، أوروبا). يحتوي على معرّف عشوائي وتاريخ الإنشاء فقط، حتى تعمل المشتريات وحدود الاستخدام وعمليات التصوير. لا يحتوي على اسمك أو بريدك.</li>
+      <li><strong>تسجيل الدخول بحساب Apple (اختياري)</strong> يتيح لك الاحتفاظ باشتراكك على جهاز جديد. يطلب التطبيق من Apple اسمك فقط، وليس بريدك. نستلم معرّف حسابك في Apple، واسمك إن اخترت مشاركته، ونحفظه مع حسابك. ونحتفظ أيضاً برمز دخول من Apple <strong>مشفّراً</strong>، فقط لنلغي ربط حسابك بـ Apple عند حذف حسابك. حديقتك وسجل التصوير لا يُنسخان إلى الحساب، بل يبقيان على جهازك.</li>
+      <li><strong>المشتريات.</strong> جميع المدفوعات تتم عبر Apple، ولا نرى بيانات بطاقتك أبداً. تستلم RevenueCat (الولايات المتحدة) إيصالات الشراء والمنتجات التي اشتريتها ومعرّفك المجهول (وهو معرّفك لدى RevenueCat) لإدارة اشتراكك ومشتريات الكتب، وتخبر خادمنا إن كنت مشتركاً. ولمنع مشاركة عملية شراء واحدة بين حسابات كثيرة، يحتفظ خادمنا بعدّاد استخدام لكل عملية شراء بصيغة مشفّرة باتجاه واحد (hash).</li>
+    </ul>
+
+    <h2>5. صور النباتات (التعرّف والتشخيص)</h2>
+    <ul>
+      <li>قبل أول صورة يطلب التطبيق موافقتك: زر التصوير مكتوب عليه "موافق، التقط صورة"، وتحته سطر يوضّح أن الصورة تُرسل إلى مزوّد ذكاء اصطناعي خارجي لتحليلها.</li>
+      <li>عندما تلتقط صورة أو تختارها، يصغّرها التطبيق أولاً (أطول ضلع حتى 1024 بكسل، بصيغة JPEG)، والنسخة المصغّرة لا تحمل بيانات الموقع. ثم تُرسل من 1 إلى 3 صور إلى خادمنا.</li>
+      <li>يرسل خادمنا الصور إلى <strong>OpenAI (الولايات المتحدة)</strong>، التي تتعرّف على النبتة (أو الحشرة أو الطائر أو الشجرة وغيرها) أو تفحص صحتها. وفي الفحص الصحي تُرسل أيضاً إجاباتك على الأسئلة القصيرة (داخل البيت أو خارجه، الضوء، الري، أصيص أو أرض، والمدينة التي اخترتها).</li>
+      <li>يحفظ خادمنا <strong>الصور</strong> في مجلدك الخاص في Supabase Storage (فرانكفورت)، ويحتفظ بسجل لكل عملية (نوعها، ونتيجة الذكاء الاصطناعي، واسم النبتة، والوقت). لا يصل إلى مجلدك إلا خادمنا وحسابك أنت. نحتفظ بها حتى تعيد المحاولة فتحصل على النتيجة نفسها بدون خصم ثانٍ، وحتى نراجع النتيجة إذا أبلغت عنها (القسم 8)، وللحفاظ على أمان الخدمة.</li>
+      <li>تبقى عمليات التصوير وصورها <strong>حتى تحذف حسابك</strong>. حذف عملية من سجل التصوير في التطبيق يحذفها من جهازك فقط، ولحذف عملية محفوظة لدينا قبل ذلك راسلنا. سجلات العمليات غير المكتملة أو الفاشلة تُحذف بعد يوم واحد.</li>
+      <li>تعالج OpenAI الصور لإعطاء النتيجة فقط. لا تستخدمها لتدريب نماذجها، وقد تحتفظ بها حتى 30 يوماً لمراقبة إساءة الاستخدام ثم تحذفها. نرسل إلى OpenAI نسخة مشفّرة باتجاه واحد (hash) من معرّف حسابك لكشف إساءة الاستخدام، وليس المعرّف نفسه، ولا نرسل اسمك أبداً.</li>
+      <li>نرجو تصوير النباتات وليس الأشخاص. إذا ظهر شخص أو أي معلومات شخصية في الصورة، فإنها تُعالج وتُحفظ مثل باقي الصورة.</li>
+    </ul>
+
+    <h2>6. مستشار النباتات (محادثة بالذكاء الاصطناعي)</h2>
+    <ul>
+      <li>قبل أول محادثة يطلب التطبيق موافقتك ("موافق، ابدأ المحادثة")، ويوضّح أن رسائلك ومعلومات نبتتك تُرسل إلى مزوّد ذكاء اصطناعي خارجي.</li>
+      <li>عندما ترسل رسالة، تُرسل المحادثة (رسائلك الأخيرة وردود المستشار) ومعلومات عن النبتة عبر خادمنا إلى <strong>OpenAI (الولايات المتحدة)</strong> لإعداد الرد. معلومات النبتة هي: نوعها واسمها، والاسم الذي اخترته لها، داخل البيت أو خارجه، أصيص أو أرض، والمدينة التي اخترتها، وعدد الأيام منذ آخر ري، والمشكلات التي شُخّصت مؤخراً، وملخّص قصير للعناية، والشهر الحالي. ملاحظاتك وصورك لا تُرسل أبداً.</li>
+      <li>تُفحص رسالتك الأخيرة أيضاً بخدمة الفحص (moderation) لدى OpenAI للحفاظ على سلامة المحادثة.</li>
+      <li>خادمنا <strong>لا</strong> يحفظ رسائل المحادثة ولا يكتبها في السجلات. سجل المحادثة محفوظ على جهازك فقط، ويمكنك مسحه.</li>
+      <li>لا تستخدم OpenAI هذه البيانات لتدريب نماذجها، وقد تحتفظ بها حتى 30 يوماً لمراقبة إساءة الاستخدام ثم تحذفها.</li>
+      <li>نرجو ألا ترسل في المحادثة معلومات تكشف هويتك (الاسم الكامل أو رقم الهاتف أو العنوان).</li>
+    </ul>
+
+    <h2>7. أسئلتك عن النباتات</h2>
+    <ul>
+      <li>عندما تطرح سؤالك الخاص في صفحة أسئلة النبتة، يُرسل السؤال واسم النبتة عبر خادمنا إلى OpenAI، التي تفحص السؤال أولاً بخدمة الفحص ثم تكتب الجواب.</li>
+      <li>حتى نجيب عن السؤال نفسه بسرعة وبتكلفة أقل في المرة القادمة، يحفظ خادمنا نص السؤال والجواب مع نوع النبتة، <strong>بدون معرّفك أو أي ربط بك</strong>. ومن يسأل السؤال نفسه عن النبتة نفسها لاحقاً يحصل على الجواب المحفوظ. تُحذف هذه البيانات بعد سنة. ولأنها غير مرتبطة بك، لا نستطيع إيجادها وحذفها عند حذف حسابك، لذلك نرجو ألا تكتب معلومات شخصية في السؤال.</li>
+    </ul>
+
+    <h2>8. الملاحظات والبلاغات</h2>
+    <p>إذا أرسلت ملاحظة عن نتيجة أو صفحة عناية (مثل "تعرّف خاطئ" أو "مفيد" أو تقييم بالنجوم أو تعليق)، أو أبلغت عن رد من مستشار النباتات، نحفظ: معرّفك، والسبب، والعملية أو النبتة المعنية، والاسم الذي تقترحه، وتعليقك وتقييمك، ونسخة من نتيجة الذكاء الاصطناعي لتلك العملية من خادمنا. وفي البلاغ عن رد المستشار نحفظ نص ذلك الرد (وليس رسائلك أنت أبداً). نستخدم ذلك لمراجعة النتائج وتحسينها. تُحذف البلاغات بعد <strong>60 يوماً</strong>، أو قبل ذلك عند حذف حسابك.</p>
+
+    <h2>9. تواصل معنا</h2>
+    <p>إذا راسلتنا من الإعدادات ← "تواصل معنا"، نحفظ بريدك الإلكتروني ورسالتك وحتى 3 صور شاشة ترفقها، وإصدار التطبيق ونوع الجهاز، حتى نرد عليك. تُحذف الرسائل بعد <strong>180 يوماً</strong>، وتبقى صور الشاشة في مجلدك الخاص حتى تحذف حسابك. ويُحذف كل ذلك عند حذف حسابك. إذا تعذّر إرسال النموذج، يفتح التطبيق تطبيق البريد بدلاً منه. وعندما تراسلنا بالبريد، نحتفظ بالمراسلة طوال المدة اللازمة لمعالجة طلبك.</p>
+
+    <h2>10. المدينة والطقس والمحتوى المحلي</h2>
+    <ul>
+      <li>لا يطلب التطبيق إذن الموقع ولا يقرأ موقعك (GPS) أبداً. أنت تختار مدينتك من قائمة في التطبيق.</li>
+      <li><strong>الطقس:</strong> يرسل التطبيق إحداثيات ثابتة للمدينة التي اخترتها (وسط المدينة، من قائمة التطبيق) إلى خادمنا، الذي يجلب طقس اليوم من <strong>Apple WeatherKit</strong>. تستلم Apple من خادمنا إحداثيات المدينة فقط، وليس معرّفك. لا نحفظ هذا الطلب (تُخزّن النتيجة مؤقتاً 30 دقيقة لكل منطقة). تُعرض بيانات الطقس مع شعار Apple Weather ورابط مصادر البيانات لدى Apple (<a href="https://weatherkit.apple.com/legal-attribution.html">weatherkit.apple.com/legal-attribution.html</a>)، ويُحمّل شعار Apple Weather من خادم Apple.</li>
+      <li><strong>النصائح الشهرية وقوائم النباتات:</strong> يرسل التطبيق المدينة والدولة اللتين اخترتهما إلى خادمنا. وفي الدول العربية خارج الخليج، قد تُرسل المدينة والدولة والشهر إلى OpenAI لكتابة نصائح لذلك المكان. النتيجة مشتركة بين كل من في تلك المدينة ولا تحتوي على بيانات شخصية.</li>
+    </ul>
+
+    <h2>11. صفحات العناية والصور المرجعية</h2>
+    <p>تُكتب صفحات العناية مرة واحدة لكل نوع نبات (بالذكاء الاصطناعي، اعتماداً على بيانات النباتات التي راجعناها) ويستخدمها جميع المستخدمين، ولا يُستخدم فيها إلا اسم النوع، بدون أي بيانات شخصية. الصور المرجعية للنباتات مأخوذة من Wikimedia Commons بتراخيص حرة. يحمّلها خادمنا مرة واحدة ويعرضها من مساحة التخزين الخاصة بنا، لذلك لا يتصل التطبيق بـ Wikimedia ولا تُرسل إليها أي بيانات عنك.</p>
+
+    <h2>12. الإشعارات</h2>
+    <ul>
+      <li>تذكيرات العناية، وتذكير قبل نهاية الفترة المجانية أو الشهر الأول المخفّض بيومين إذا فعّلته عند الاشتراك. كلها إشعارات محلية تُنشأ على جهازك.</li>
+      <li>ليس لدينا خادم إشعارات، ولا نرسل إشعارات تسويقية.</li>
+      <li>يمكنك إيقاف تذكيرات العناية من الإعدادات ← "إشعارات العناية"، أو إيقاف كل الإشعارات من إعدادات جهازك.</li>
+    </ul>
+
+    <h2>13. لا إعلانات ولا تتبّع ولا تحليلات</h2>
+    <p>لا يعرض التطبيق إعلانات، ولا يتتبّعك عبر تطبيقات أو مواقع الشركات الأخرى، ولا يطلب إذن التتبّع في iOS، ولا يحتوي على أي أدوات إعلانات أو تحليلات (لا Meta/فيسبوك، ولا Google Analytics، ولا ما يشبهها). لا نبيع بياناتك ولا نشاركها مع وسطاء البيانات. قد يعرض التطبيق نافذة التقييم الخاصة بـ Apple.</p>
+
+    <h2>14. لماذا نستخدم بياناتك (الأساس القانوني)</h2>
+    <ul>
+      <li><strong>لتقديم التطبيق واشتراكك</strong> (الحساب، المشتريات، استعادتها، عمليات التصوير وحفظها، الطقس، النصائح، الرد على رسائلك): تنفيذ العقد بيننا.</li>
+      <li><strong>إرسال صورك ورسائل المحادثة وأسئلتك إلى مزوّد الذكاء الاصطناعي</strong>: موافقتك التي تعطيها بزر التصوير وزر بدء المحادثة. يمكنك سحبها من الإعدادات ← "السماح بالوصول" ← "سحب الموافقة على تحليل الصور".</li>
+      <li><strong>حدود الاستخدام، ومنع إساءة الاستخدام، والفحص، والأمان، والملاحظات والبلاغات، وحفظ الأسئلة المشتركة</strong>: مصلحتنا المشروعة في الحفاظ على خدمة آمنة ودقيقة وبتكلفة معقولة. يمكنك الاعتراض بمراسلتنا.</li>
+    </ul>
+
+    <h2>15. من يستلم بياناتك</h2>
+    <ul>
+      <li><strong>Supabase</strong> (خوادم في فرانكفورت، أوروبا): حسابك، وصور عمليات التصوير وسجلاتها، وعدّادات الاستخدام، والملاحظات والبلاغات، ورسائل "تواصل معنا"، ورمز Apple المشفّر، والبيانات المشتركة المحفوظة.</li>
+      <li><strong>Expo (EAS Hosting)</strong> وتعمل على شبكة Cloudflare: تشغّل كود خادمنا، وتمر عبرها صورك ورسائلك وطلباتك أثناء إرسالها. وتوصل Expo أيضاً تحديثات التطبيق.</li>
+      <li><strong>OpenAI</strong> (الولايات المتحدة): تحلّل الصور، وتكتب ردود مستشار النباتات، وتجيب عن الأسئلة، وتكتب صفحات العناية والنصائح، وتفحص الرسائل والأسئلة للتأكد من سلامتها.</li>
+      <li><strong>RevenueCat</strong> (الولايات المتحدة): تدير الاشتراكات والمشتريات داخل التطبيق.</li>
+      <li><strong>Apple</strong>: المدفوعات، وتسجيل الدخول بحساب Apple، والطقس (WeatherKit)، ونافذة التقييم.</li>
+    </ul>
+    <p>يعالج مزوّدونا البيانات وفق شروط معالجة البيانات الخاصة بهم، ويمنحونها حماية مساوية لهذه السياسة أو أقوى منها. يحتفظ مزوّدو الاستضافة بسجلات طلبات عادية (مثل عنوان IP والوقت) لفترة محدودة وفق قواعدهم، ونحن لا نكتب صورك أو رسائل المحادثة أو أسئلتك أو رسائل التواصل في سجلاتنا. قد نكشف البيانات إذا طلب القانون ذلك.</p>
+
+    <h2>16. نقل البيانات خارج بلدك</h2>
+    <p>نحن في الإمارات. تُحفظ بياناتك في أوروبا (Supabase)، وتُعالج في الولايات المتحدة ودول أخرى تعمل فيها OpenAI وRevenueCat وExpo وCloudflare وApple. حيث يتطلّب القانون ذلك (مثلاً للمستخدمين في الاتحاد الأوروبي أو المملكة المتحدة)، يعتمد هذا النقل على البنود التعاقدية القياسية لدى المزوّدين أو ضمانات معتمدة أخرى.</p>
+
+    <h2>17. مدة الاحتفاظ بالبيانات</h2>
+    <ul>
+      <li>البيانات على جهازك: حتى تحذفها، أو تحذف حسابك من التطبيق، أو تحذف التطبيق.</li>
+      <li>الحساب المجهول أو حساب Apple (واسمك إن شاركته): حتى تحذف حسابك.</li>
+      <li>صور عمليات التصوير وسجلاتها: حتى تحذف حسابك (العمليات غير المكتملة أو الفاشلة: يوم واحد).</li>
+      <li>عدّادات الاستخدام: 30 يوماً.</li>
+      <li>الملاحظات والبلاغات: 60 يوماً.</li>
+      <li>رسائل "تواصل معنا": 180 يوماً، وصور الشاشة المرفقة: حتى تحذف حسابك.</li>
+      <li>الأسئلة والأجوبة المشتركة (غير مرتبطة بك): سنة واحدة.</li>
+      <li>رمز Apple المشفّر: حتى تحذف حسابك (ثم يُلغى ويُحذف).</li>
+      <li>البيانات لدى OpenAI: حتى 30 يوماً.</li>
+      <li>سجلات الشراء لدى RevenueCat: حتى تحذف حسابك. وتحتفظ Apple بسجلات معاملاتها الخاصة.</li>
+      <li>محادثة مستشار النباتات: لا تُحفظ على خادمنا أبداً.</li>
+      <li>سجلات طلبات الاستضافة: فترة محدودة يحددها كل مزوّد.</li>
+    </ul>
+
+    <h2>18. حقوقك وخياراتك</h2>
+    <p>بحسب مكان إقامتك (مثلاً في الاتحاد الأوروبي أو المملكة المتحدة)، يحق لك الوصول إلى بياناتك وتصحيحها وحذفها والحصول على نسخة منها، وتقييد استخدامها أو الاعتراض عليه، وسحب موافقتك في أي وقت (دون أن يؤثر ذلك على ما تم قبل السحب). ويحق لك أيضاً تقديم شكوى إلى هيئة حماية البيانات في بلدك. كيف تمارس هذه الحقوق:</p>
+    <ul>
+      <li><strong>حذف كل شيء:</strong> داخل التطبيق، الإعدادات ← "إدارة الحساب" ← "حذف الحساب وكل البيانات" (وإذا لم تسجّل الدخول: الإعدادات ← "تسجيل الدخول" ← "حذف بياناتي من نبتتي"). يحذف هذا حسابك نهائياً، وكل بياناتك على خادمنا (عمليات التصوير، الملاحظات والبلاغات، رسائل التواصل، عدّادات الاستخدام)، وكل الصور وصور الشاشة في مجلدك، وسجلات الشراء لدى RevenueCat، ويلغي ربط حسابك بـ Apple. ويمسح أيضاً بيانات التطبيق وصوره والإشعارات المجدولة من جهازك. لا يلغي اشتراك App Store، ويمكنك إدارته من إعدادات Apple ID. لا يشمل الحذف النسخ التي تحتفظ بها OpenAI حتى 30 يوماً، ولا الأسئلة المشتركة غير المرتبطة بك.</li>
+      <li><strong>سحب موافقة الذكاء الاصطناعي:</strong> الإعدادات ← "السماح بالوصول" ← "سحب الموافقة على تحليل الصور". لا يُرسل شيء إلى مزوّد الذكاء الاصطناعي حتى توافق من جديد.</li>
+      <li><strong>مسح محادثة المستشار:</strong> من داخل المحادثة على جهازك.</li>
+      <li><strong>أي طلب آخر</strong> (مثل نسخة من بياناتك، أو حذف عملية تصوير واحدة محفوظة): راسلنا على <a href="mailto:support@massalhafzco.com">support@massalhafzco.com</a>. لأن الحساب مجهول، قد نحتاج إلى معلومات من التطبيق لإيجاد بياناتك، والحذف من داخل التطبيق هو الأسرع. نرد خلال 30 يوماً.</li>
+    </ul>
+
+    <h2>19. الأمان</h2>
+    <p>تُرسل البيانات عبر اتصالات مشفّرة (HTTPS). بيانات الخادم محمية بصلاحيات وصول: صور كل مستخدم في مجلد خاص لا يصل إليه إلا خادمنا وحساب ذلك المستخدم، ورمز Apple محفوظ مشفّراً. لا توجد وسيلة آمنة 100%، لذلك نحتفظ بأقل قدر ممكن من البيانات على خوادمنا.</p>
+
+    <h2>20. الأطفال</h2>
+    <p>نبتتي تطبيق عام للزراعة والعناية بالنباتات، وليس موجّهاً للأطفال دون 13 عاماً، ولا نجمع عن قصد بيانات شخصية من الأطفال دون 13 عاماً (أو دون السن الأدنى في بلدك). إذا كنت تعتقد أن طفلاً أرسل إلينا بيانات شخصية، تواصل معنا وسنحذفها.</p>
+
+    <h2>21. التغييرات</h2>
+    <p>إذا تغيّرت هذه السياسة سنحدّث التاريخ أعلاه، وفي التغييرات المهمة سنخبرك داخل التطبيق أو في صفحة App Store قبل تطبيقها.</p>
+
+    <h2>22. التواصل</h2>
+    <p>MASSALHA FZCO، الإمارات العربية المتحدة · <a href="mailto:support@massalhafzco.com">support@massalhafzco.com</a> · صفحة الدعم: <a href="/nabtati/support/">legal.massalhafzco.com/nabtati/support</a> · شروط الاستخدام: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">اتفاقية Apple القياسية (EULA)</a>.</p>
+  </section>
+
+  <footer>© 2026 MASSALHA FZCO</footer>
+</main>
+</body>
+</html>
