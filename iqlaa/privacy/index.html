@@ -40,6 +40,7 @@
   <ul>
     <li><strong>Anonymous account.</strong> On first launch the app creates an anonymous account with Supabase (servers in Frankfurt, EU). It holds a random user ID and the date it was created, so that purchases and AI message limits work. It does not contain your name or email.</li>
     <li><strong>Sign in with Apple (optional)</strong> lets you keep your subscription on a new device. We receive your Apple account ID and, if you choose to share it, your name (and an email address only if Apple provides one; it can be a private relay address). We also keep an Apple sign-in token, <strong>encrypted</strong>, only so that we can revoke your Apple sign-in when you delete your account.</li>
+    <li><strong>Sign in with Google (optional, iPhone)</strong> does the same job. Google sends us your Google account ID, your name, your email address and a link to your Google profile photo (we don't use the photo). We don't get access to anything else in your Google account, and we keep no Google token on our server.</li>
     <li>Your streak and progress are not backed up to the account; they stay on your device.</li>
     <li><strong>Purchases.</strong> Payments are handled by Apple; we never see your card details. RevenueCat receives your purchase receipts and your anonymous user ID to manage your subscription, and tells our server whether you are a subscriber.</li>
   </ul>
@@ -98,18 +99,19 @@
     <li><strong>OpenAI</strong> (USA): writes سند's replies and checks them for safety.</li>
     <li><strong>RevenueCat</strong> (USA): manages purchases and sends purchase events to Meta (section 6).</li>
     <li><strong>Apple</strong>: payments, Sign in with Apple and the tracking prompt.</li>
+    <li><strong>Google</strong>: Sign in with Google, only if you choose it.</li>
     <li><strong>Meta Platforms</strong>: advertising measurement (section 6).</li>
     <li><strong>Cloudflare</strong> (Cloudflare for Families): your DNS lookups, only if you turn on the website blocker.</li>
   </ul>
   <p>Our providers process data under their data processing terms and give it protection equal to or stronger than this policy. Our hosting providers keep standard request logs (such as IP address and time) for a limited period under their own retention rules. We don't sell your data and we don't share it with data brokers.</p>
 
   <h2>12. International transfers</h2>
-  <p>We are based in the UAE. Your data is processed in the EU (Supabase) and in the USA and other countries where OpenAI, RevenueCat, Expo, Cloudflare, Apple and Meta operate. Where the law requires it (for example for users in the EU or UK), these transfers rely on the providers' Standard Contractual Clauses or other approved safeguards.</p>
+  <p>We are based in the UAE. Your data is processed in the EU (Supabase) and in the USA and other countries where OpenAI, RevenueCat, Expo, Cloudflare, Apple, Google and Meta operate. Where the law requires it (for example for users in the EU or UK), these transfers rely on the providers' Standard Contractual Clauses or other approved safeguards.</p>
 
   <h2>13. How long we keep data</h2>
   <ul>
     <li>Data on your device: until you delete it, delete your account in the app or delete the app.</li>
-    <li>Anonymous or Apple account: until you delete your account.</li>
+    <li>Anonymous, Apple or Google account: until you delete your account.</li>
     <li>AI usage counters: 30 days.</li>
     <li>Reports of سند replies: 60 days.</li>
     <li>Encrypted Apple sign-in token: until you delete your account (it is then revoked and deleted).</li>
@@ -122,7 +124,7 @@
   <h2>14. Your rights and choices</h2>
   <p>Depending on where you live (for example in the EU or UK), you have the right to access, correct, delete or receive a copy of your data, to restrict or object to its use, and to withdraw consent at any time (this does not affect what was done before). You can also complain to your local data protection authority. How to exercise them:</p>
   <ul>
-    <li><strong>Delete everything:</strong> in the app, Settings → <strong>حذف الحساب وكل البيانات</strong>. This deletes your account and server data (including RevenueCat purchase records and your Apple sign-in), removes the blocker setting and wipes all data on your device. It does not cancel an App Store subscription: manage that in your Apple ID settings. Data already sent to Meta, and copies kept by OpenAI for up to 30 days, are not affected.</li>
+    <li><strong>Delete everything:</strong> in the app, Settings → <strong>حذف الحساب وكل البيانات</strong>. This deletes your account and server data (including RevenueCat purchase records and your Apple sign-in; with Google, the app also removes its access from your Google account), removes the blocker setting and wipes all data on your device. It does not cancel an App Store subscription: manage that in your Apple ID settings. Data already sent to Meta, and copies kept by OpenAI for up to 30 days, are not affected.</li>
     <li><strong>Withdraw AI consent:</strong> Settings → إيقاف مشاركة المحادثة مع سند.</li>
     <li><strong>Turn off offers:</strong> Settings → العروض والخصومات.</li>
     <li><strong>Stop tracking:</strong> iPhone Settings → Privacy &amp; Security → Tracking.</li>
@@ -173,6 +175,7 @@
     <ul>
       <li><strong>حساب مجهول.</strong> عند أول فتح ينشئ التطبيق حساباً مجهولاً لدى Supabase (خوادم في فرانكفورت، أوروبا). يحتوي على معرّف عشوائي وتاريخ الإنشاء فقط، حتى تعمل المشتريات وحدود رسائل الذكاء الاصطناعي. لا يحتوي على اسمك أو بريدك.</li>
       <li><strong>تسجيل الدخول بحساب Apple (اختياري)</strong> يتيح لك الاحتفاظ باشتراكك على جهاز جديد. نستلم معرّف حسابك في Apple، واسمك إن اخترت مشاركته (وبريداً إلكترونياً فقط إذا أرسلته Apple، وقد يكون عنواناً مخفياً). ونحتفظ أيضاً برمز دخول من Apple <strong>مشفّراً</strong>، فقط لنلغي ربط حسابك بـ Apple عند حذف حسابك.</li>
+      <li><strong>تسجيل الدخول بحساب Google (اختياري، على الآيفون)</strong> يؤدي الغرض نفسه. ترسل لنا Google معرّف حسابك فيها، واسمك، وبريدك الإلكتروني، ورابط صورة ملفك في Google (لا نستخدم الصورة). لا نحصل على أي شيء آخر من حسابك في Google، ولا نحتفظ بأي رمز من Google على خادمنا.</li>
       <li>عدّاد أيامك وتقدّمك لا يُحفظان في الحساب، بل يبقيان على جهازك.</li>
       <li><strong>المشتريات.</strong> جميع المدفوعات تتم عبر Apple، ولا نرى بيانات بطاقتك أبداً. تستلم RevenueCat إيصالات الشراء ومعرّفك المجهول لإدارة اشتراكك، وتخبر خادمنا إن كنت مشتركاً.</li>
     </ul>
@@ -231,18 +234,19 @@
       <li><strong>OpenAI</strong> (الولايات المتحدة): تُعدّ ردود سند وتفحصها للتأكد من سلامتها.</li>
       <li><strong>RevenueCat</strong> (الولايات المتحدة): تدير المشتريات وترسل أحداث الشراء إلى Meta (القسم 6).</li>
       <li><strong>Apple</strong>: المدفوعات، وتسجيل الدخول بحساب Apple، ونافذة التتبّع.</li>
+      <li><strong>Google</strong>: تسجيل الدخول بحساب Google، فقط إذا اخترته.</li>
       <li><strong>Meta Platforms</strong>: قياس الإعلانات (القسم 6).</li>
       <li><strong>Cloudflare</strong> (Cloudflare for Families): طلبات DNS من جهازك، فقط إذا فعّلت حاجب المواقع.</li>
     </ul>
     <p>يعالج مزوّدونا البيانات وفق شروط معالجة البيانات الخاصة بهم، ويمنحونها حماية مساوية لهذه السياسة أو أقوى منها. يحتفظ مزوّدو الاستضافة بسجلات طلبات عادية (مثل عنوان IP والوقت) لفترة محدودة وفق قواعدهم. لا نبيع بياناتك ولا نشاركها مع وسطاء البيانات.</p>
 
     <h2>12. نقل البيانات خارج بلدك</h2>
-    <p>نحن في الإمارات. تُعالج بياناتك في أوروبا (Supabase) وفي الولايات المتحدة ودول أخرى تعمل فيها OpenAI وRevenueCat وExpo وCloudflare وApple وMeta. حيث يتطلّب القانون ذلك (مثلاً للمستخدمين في الاتحاد الأوروبي أو المملكة المتحدة)، يعتمد هذا النقل على البنود التعاقدية القياسية لدى المزوّدين أو ضمانات معتمدة أخرى.</p>
+    <p>نحن في الإمارات. تُعالج بياناتك في أوروبا (Supabase) وفي الولايات المتحدة ودول أخرى تعمل فيها OpenAI وRevenueCat وExpo وCloudflare وApple وGoogle وMeta. حيث يتطلّب القانون ذلك (مثلاً للمستخدمين في الاتحاد الأوروبي أو المملكة المتحدة)، يعتمد هذا النقل على البنود التعاقدية القياسية لدى المزوّدين أو ضمانات معتمدة أخرى.</p>
 
     <h2>13. مدة الاحتفاظ بالبيانات</h2>
     <ul>
       <li>البيانات على جهازك: حتى تحذفها، أو تحذف حسابك من التطبيق، أو تحذف التطبيق.</li>
-      <li>الحساب المجهول أو حساب Apple: حتى تحذف حسابك.</li>
+      <li>الحساب المجهول أو حساب Apple أو Google: حتى تحذف حسابك.</li>
       <li>عدّادات استخدام الذكاء الاصطناعي: 30 يوماً.</li>
       <li>بلاغات ردود سند: 60 يوماً.</li>
       <li>رمز Apple المشفّر: حتى تحذف حسابك (ثم يُلغى ويُحذف).</li>
@@ -255,7 +259,7 @@
     <h2>14. حقوقك وخياراتك</h2>
     <p>بحسب مكان إقامتك (مثلاً في الاتحاد الأوروبي أو المملكة المتحدة)، يحق لك الوصول إلى بياناتك وتصحيحها وحذفها والحصول على نسخة منها، وتقييد استخدامها أو الاعتراض عليه، وسحب موافقتك في أي وقت (دون أن يؤثر ذلك على ما تم قبل السحب). ويحق لك أيضاً تقديم شكوى إلى هيئة حماية البيانات في بلدك. كيف تمارس هذه الحقوق:</p>
     <ul>
-      <li><strong>حذف كل شيء:</strong> داخل التطبيق، الإعدادات ← <strong>حذف الحساب وكل البيانات</strong>. يحذف حسابك وبياناته على الخادم (ومنها سجلات الشراء لدى RevenueCat وربط حساب Apple)، ويزيل إعداد الحاجب، ويمسح كل البيانات من جهازك. لا يلغي اشتراك App Store، ويمكنك إدارته من إعدادات Apple ID. لا يشمل الحذف ما أُرسل سابقاً إلى Meta، ولا النسخ التي تحتفظ بها OpenAI حتى 30 يوماً.</li>
+      <li><strong>حذف كل شيء:</strong> داخل التطبيق، الإعدادات ← <strong>حذف الحساب وكل البيانات</strong>. يحذف حسابك وبياناته على الخادم (ومنها سجلات الشراء لدى RevenueCat وربط حساب Apple، ومع Google يزيل التطبيق أيضاً صلاحيته من حسابك في Google)، ويزيل إعداد الحاجب، ويمسح كل البيانات من جهازك. لا يلغي اشتراك App Store، ويمكنك إدارته من إعدادات Apple ID. لا يشمل الحذف ما أُرسل سابقاً إلى Meta، ولا النسخ التي تحتفظ بها OpenAI حتى 30 يوماً.</li>
       <li><strong>سحب موافقة الذكاء الاصطناعي:</strong> الإعدادات ← إيقاف مشاركة المحادثة مع سند.</li>
       <li><strong>إيقاف العروض:</strong> الإعدادات ← العروض والخصومات.</li>
       <li><strong>إيقاف التتبّع:</strong> إعدادات الآيفون ← الخصوصية والأمن ← التتبّع.</li>
