@@ -9,7 +9,7 @@
 <body>
 <main>
   <h1>نبتتي – Privacy Policy</h1>
-  <p class="meta">Last updated: 13 October 2026 · <a href="#ar">العربية</a></p>
+  <p class="meta">Last updated: 14 October 2026 · <a href="#ar">العربية</a></p>
 
   <p>This policy covers the app "نبتتي – طبيب النباتات" (Nabtati). It explains what the app collects, why, who receives it, how long it is kept and how you can control or delete it. Nabtati identifies plants from your photos, checks a plant's health, gives care information and reminders, and answers questions about your plants with artificial intelligence (AI). It gives general gardening information only. It is not a substitute for a doctor, a vet or a licensed agricultural expert.</p>
 
@@ -23,7 +23,7 @@
     <li>Plant Advisor messages and questions you ask about a plant are also sent to OpenAI. Our server does <strong>not</strong> store your Plant Advisor chat; the chat history stays on your device.</li>
     <li>My Garden (your plants, nicknames, notes and their photos), reminders and your scan history list stay on your device.</li>
     <li>The app does not use your GPS location. You pick a city from a list, and we use that city for the weather and local tips.</li>
-    <li>No ads, no tracking, no advertising or analytics SDKs, and we never sell your data.</li>
+    <li>No ads in the app, and we never sell your data. To measure our ads, the app tells Meta (Facebook) about your install and a few steps in the app. If you allow it in Apple's "Allow tracking?" prompt, this includes your device's advertising identifier. If you don't allow it, Meta only gets these events in a limited form, without the advertising identifier, that it may use only in aggregated reports (see section 13).</li>
   </ul>
 
   <h2>3. Data that stays on your device</h2>
@@ -41,7 +41,7 @@
   <ul>
     <li><strong>Anonymous account.</strong> On first launch the app creates an anonymous account with Supabase (servers in Frankfurt, EU). It holds a random user ID and the date it was created, so that purchases, usage limits and your scans work. It does not contain your name or email.</li>
     <li><strong>Sign in with Apple (optional)</strong> lets you keep your subscription on a new device. The app asks Apple only for your name, not your email. We receive your Apple account ID and, if you choose to share it, your name, which we keep with your account. We also keep an Apple sign-in token, <strong>encrypted</strong>, only so that we can revoke your Apple sign-in when you delete your account. Your garden and scan history are not copied to the account; they stay on your device.</li>
-    <li><strong>Purchases.</strong> Payments are handled by Apple; we never see your card details. RevenueCat (USA) receives your purchase receipts, the products you bought and your anonymous user ID (which is your RevenueCat ID) to manage your subscription and book purchases, and tells our server whether you are a subscriber. RevenueCat also uses these records to give us subscription statistics (for example how many people start or cancel a subscription). To stop one purchase from being shared across many accounts, our server keeps a one-way coded (hashed) usage counter per purchase.</li>
+    <li><strong>Purchases.</strong> Payments are handled by Apple; we never see your card details. RevenueCat (USA) receives your purchase receipts, the products you bought and your anonymous user ID (which is your RevenueCat ID) to manage your subscription and book purchases, and tells our server whether you are a subscriber. RevenueCat also uses these records to give us subscription statistics (for example how many people start or cancel a subscription). To stop one purchase from being shared across many accounts, our server keeps a one-way coded (hashed) usage counter per purchase. RevenueCat also tells Meta about your trial and subscription, linked to your device only if you allowed tracking (see section 13).</li>
   </ul>
 
   <h2>5. Plant photos (identify and diagnose)</h2>
@@ -95,14 +95,24 @@
     <li>Turn care reminders off in Settings → "إشعارات العناية", or turn all notifications off in your device settings.</li>
   </ul>
 
-  <h2>13. No ads, no tracking, no analytics</h2>
-  <p>The app shows no ads, does not track you across other companies' apps or websites, does not ask for the iOS tracking permission and contains no advertising or analytics SDKs (no Meta/Facebook, Google Analytics or similar). We don't sell your data and we don't share it with data brokers. The app may show Apple's own rating prompt.</p>
+  <h2>13. Ads measurement with Meta</h2>
+  <p>The app shows no ads. We advertise Nabtati on Meta (Facebook, Instagram), and we use the Meta SDK, a tool from <strong>Meta Platforms</strong> (Meta Platforms Ireland Ltd. and Meta Platforms, Inc., USA), to see which of our ads bring new users and subscribers and to improve them.</p>
+  <ul>
+    <li><strong>Apple's prompt decides.</strong> During the first setup, before the subscription screen, the app shows Apple's "Allow tracking?" prompt once. You can change your answer any time in iPhone Settings → Privacy &amp; Security → Tracking.</li>
+    <li><strong>If you allow tracking</strong>, the app sends Meta: that the app was installed and opened, that you finished the intro pages, that you saw the subscription screen and that you tapped a plan's buy button (with the plan's product ID). With these events Meta receives your device's advertising identifier (IDFA), an ID that Meta creates for this app on your device, basic device data (model, iOS and app version, language, time zone) and your IP address.</li>
+    <li><strong>If you don't allow tracking</strong>, the app never reads the advertising identifier and tells the Meta SDK that tracking is off. The same events (install and open, intro finished, subscription screen seen, buy button tapped) are still sent to Meta in a <strong>limited form</strong>: without the advertising identifier and with "advertiser tracking" turned off, so Meta may use them only in aggregated, anonymous ad reports (Aggregated Event Measurement), not to build a profile of you or to link you to other apps and websites. Meta still receives basic device data and your IP address with them.</li>
+    <li><strong>Before you answer</strong> Apple's prompt, the app sends no events to Meta. The Meta SDK may still contact Meta to load its settings or report errors in the SDK itself; this includes technical data such as your IP address, device model and app version, but no advertising identifier and no information about what you do in the app.</li>
+    <li><strong>Purchases.</strong> The app itself never sends purchases to Meta. Our purchase provider RevenueCat sends Meta, server to server, when a free trial or subscription starts or renews and when you buy a book (product, price, currency, time). If you allowed tracking, these events are linked to Meta's ID for this app on your device; if you didn't, they are sent without any advertising or Meta ID, for aggregated reports only.</li>
+    <li>We never send Meta your name, email, photos, plants, garden, notes, questions or chat messages, and we don't use Meta to show you ads inside the app.</li>
+  </ul>
+  <p>We don't use any analytics SDK (no Google Analytics or similar), we don't sell your data and we don't share it with data brokers. The app may show Apple's own rating prompt.</p>
 
   <h2>14. Why we use your data (legal bases)</h2>
   <ul>
     <li><strong>To provide the app and your subscription</strong> (account, purchases, restoring purchases, scans and their storage, weather, tips, answering your messages): performance of our contract with you.</li>
     <li><strong>Sending your photos, chat messages and questions to the AI provider</strong>: your consent, given on the photo button, the Plant Advisor start button and the question send button. You can withdraw it in Settings → "السماح بالوصول" → "سحب الموافقة على التحليل بالذكاء الاصطناعي".</li>
     <li><strong>Usage limits, abuse prevention, moderation, security, feedback and reports, the shared question cache</strong>: our legitimate interests in keeping the service safe, affordable and accurate. You can object by emailing us.</li>
+    <li><strong>Ads measurement with Meta</strong>: with the advertising identifier and Meta's ID for this app, your consent in Apple's tracking prompt (you can withdraw it in iPhone Settings → Privacy &amp; Security → Tracking); the limited, aggregated events without them, our legitimate interest in knowing which of our ads work.</li>
   </ul>
 
   <h2>15. Who receives your data</h2>
@@ -110,13 +120,14 @@
     <li><strong>Supabase</strong> (servers in Frankfurt, EU): your account, scan photos and records, usage counters, feedback and reports, Contact Us messages, the encrypted Apple sign-in token, the shared caches.</li>
     <li><strong>Expo (EAS Hosting)</strong>, which runs on Cloudflare's network: runs our server code; your photos, messages and requests pass through it in transit. Expo also delivers app updates: when the app checks for an update, Expo receives your IP address, the device platform and app version, and a random installation ID that is not linked to your account.</li>
     <li><strong>OpenAI</strong> (USA): analyses photos, writes Plant Advisor replies, answers questions, writes care pages and tips, and checks messages and questions for safety (moderation).</li>
-    <li><strong>RevenueCat</strong> (USA): manages subscriptions and in-app purchases, and gives us subscription statistics.</li>
+    <li><strong>RevenueCat</strong> (USA): manages subscriptions and in-app purchases, and gives us subscription statistics. It also sends your trial, subscription and book purchase events to Meta: linked to your device only if you allowed tracking, otherwise in limited, aggregated form (see section 13).</li>
+    <li><strong>Meta Platforms</strong> (Ireland and USA): receives the app events and purchase events described in section 13, to measure our ads; with the advertising identifier only if you allowed tracking, otherwise in limited form for aggregated reports only. Meta uses this data under its own terms and privacy policy (facebook.com/privacy/policy).</li>
     <li><strong>Apple</strong>: payments, Sign in with Apple, weather (WeatherKit) and the rating prompt.</li>
   </ul>
   <p>Our providers process data under their data processing terms and give it protection equal to or stronger than this policy. Our hosting providers keep standard request logs (such as IP address and time) for a limited period under their own retention rules; we do not write your photos, chat messages, questions or contact messages to our logs. We may disclose data if the law requires it.</p>
 
   <h2>16. International transfers</h2>
-  <p>We are based in the UAE. Your data is stored in the EU (Supabase) and processed in the USA and other countries where OpenAI, RevenueCat, Expo, Cloudflare and Apple operate. Where the law requires it (for example for users in the EU or UK), these transfers rely on the providers' Standard Contractual Clauses or other approved safeguards.</p>
+  <p>We are based in the UAE. Your data is stored in the EU (Supabase) and processed in the USA and other countries where OpenAI, RevenueCat, Expo, Cloudflare, Apple and Meta operate. Where the law requires it (for example for users in the EU or UK), these transfers rely on the providers' Standard Contractual Clauses or other approved safeguards.</p>
 
   <h2>17. How long we keep data</h2>
   <ul>
@@ -130,6 +141,8 @@
     <li>Encrypted Apple sign-in token: until you delete your account (it is then revoked and deleted).</li>
     <li>Data at OpenAI: up to 30 days.</li>
     <li>Purchase records at RevenueCat: until you delete your account. Apple keeps its own transaction records.</li>
+    <li>Meta's ID for this app on your device, kept by RevenueCat (only if you allowed tracking): until you delete your account; it is removed at the next app start if you turn tracking off.</li>
+    <li>Data at Meta: as long as Meta's own terms and privacy policy allow; we can't delete it for you (you can ask Meta).</li>
     <li>Plant Advisor chat: never stored on our server.</li>
     <li>Hosting request logs: a limited period set by each provider.</li>
   </ul>
@@ -139,6 +152,7 @@
   <ul>
     <li><strong>Delete everything:</strong> in the app, Settings → "إدارة الحساب" → "حذف الحساب وكل البيانات" (if you haven't signed in: Settings → "حذف بياناتي", or Settings → "تسجيل الدخول" → "حذف بياناتي من نبتتي"). This permanently deletes your account, all your rows on our server (scans, feedback and reports, Contact Us messages, usage counters), all photos and screenshots in your folder, your RevenueCat purchase records, and revokes your Apple sign-in. It also wipes the app's data, photos and scheduled notifications on your device. It does not cancel an App Store subscription: manage that in your Apple ID settings. Copies kept by OpenAI for up to 30 days and the shared question cache (not linked to you) are not affected.</li>
     <li><strong>Withdraw AI consent:</strong> Settings → "السماح بالوصول" → "سحب الموافقة على التحليل بالذكاء الاصطناعي". This covers photos, diagnosis answers, Plant Advisor messages and questions. Nothing is sent to the AI provider until you agree again.</li>
+    <li><strong>Stop ads measurement:</strong> iPhone Settings → Privacy &amp; Security → Tracking → turn off Nabtati. From the next app start the advertising identifier is no longer used, RevenueCat removes Meta's ID from your purchase record, and Meta only gets the limited, aggregated events described in section 13. Data Meta already received stays under Meta's terms.</li>
     <li><strong>Clear your Plant Advisor chat:</strong> in the chat on your device.</li>
     <li><strong>Anything else</strong> (for example a copy of your data, or deleting one stored scan): email <a href="mailto:support@massalhafzco.com">support@massalhafzco.com</a>. Because the account is anonymous, we may need details from the app to find your data; in-app deletion is the fastest way. We reply within 30 days.</li>
   </ul>
@@ -159,7 +173,7 @@
 
   <section id="ar" dir="rtl" lang="ar">
     <h1>سياسة الخصوصية لتطبيق نبتتي</h1>
-    <p class="meta">آخر تحديث: 13 أكتوبر 2026</p>
+    <p class="meta">آخر تحديث: 14 أكتوبر 2026</p>
 
     <p>تشرح هذه السياسة ما يجمعه تطبيق "نبتتي – طبيب النباتات"، ولماذا، ومن يستلمه، ومدة الاحتفاظ به، وكيف تتحكّم به أو تحذفه. يتعرّف نبتتي على النباتات من صورك، ويفحص صحة النبتة، ويقدّم معلومات العناية والتذكيرات، ويجيب عن أسئلتك عن نباتاتك بالذكاء الاصطناعي. يقدّم التطبيق معلومات عامة عن الزراعة فقط، وليس بديلاً عن الطبيب أو الطبيب البيطري أو المختص الزراعي.</p>
 
@@ -173,7 +187,7 @@
       <li>رسائلك إلى مستشار النباتات وأسئلتك عن النباتات تُرسل أيضاً إلى OpenAI. خادمنا <strong>لا</strong> يحفظ محادثتك مع المستشار، وسجل المحادثة يبقى على جهازك.</li>
       <li>حديقتي (نباتاتك وأسماؤها وملاحظاتك وصورها) والتذكيرات وقائمة سجل التصوير تبقى على جهازك.</li>
       <li>التطبيق لا يستخدم موقعك (GPS). أنت تختار مدينتك من قائمة، ونستخدم هذه المدينة للطقس والنصائح المحلية.</li>
-      <li>لا إعلانات، ولا تتبّع، ولا أدوات إعلانات أو تحليلات، ولا نبيع بياناتك أبداً.</li>
+      <li>لا إعلانات داخل التطبيق، ولا نبيع بياناتك أبداً. لنقيس نتائج إعلاناتنا، يخبر التطبيق شركة Meta (فيسبوك) بتثبيت التطبيق وببعض الخطوات داخله. إذا سمحت بذلك في نافذة Apple "السماح بالتتبّع؟"، يشمل ذلك معرّف الإعلانات لجهازك. وإذا لم تسمح، تستلم Meta هذه الأحداث بشكل محدود فقط، دون معرّف الإعلانات، ولا يحق لها استخدامها إلا في تقارير إجمالية (انظر البند 13).</li>
     </ul>
 
     <h2>3. بيانات تبقى على جهازك</h2>
@@ -191,7 +205,7 @@
     <ul>
       <li><strong>حساب مجهول.</strong> عند أول فتح ينشئ التطبيق حساباً مجهولاً لدى Supabase (خوادم في فرانكفورت، أوروبا). يحتوي على معرّف عشوائي وتاريخ الإنشاء فقط، حتى تعمل المشتريات وحدود الاستخدام وعمليات التصوير. لا يحتوي على اسمك أو بريدك.</li>
       <li><strong>تسجيل الدخول بحساب Apple (اختياري)</strong> يتيح لك الاحتفاظ باشتراكك على جهاز جديد. يطلب التطبيق من Apple اسمك فقط، وليس بريدك. نستلم معرّف حسابك في Apple، واسمك إن اخترت مشاركته، ونحفظه مع حسابك. ونحتفظ أيضاً برمز دخول من Apple <strong>مشفّراً</strong>، فقط لنلغي ربط حسابك بـ Apple عند حذف حسابك. حديقتك وسجل التصوير لا يُنسخان إلى الحساب، بل يبقيان على جهازك.</li>
-      <li><strong>المشتريات.</strong> جميع المدفوعات تتم عبر Apple، ولا نرى بيانات بطاقتك أبداً. تستلم RevenueCat (الولايات المتحدة) إيصالات الشراء والمنتجات التي اشتريتها ومعرّفك المجهول (وهو معرّفك لدى RevenueCat) لإدارة اشتراكك ومشتريات الكتب، وتخبر خادمنا إن كنت مشتركاً. وتستخدم RevenueCat هذه السجلات أيضاً لتعطينا إحصاءات عن الاشتراكات (مثل عدد من يبدأ الاشتراك أو يلغيه). ولمنع مشاركة عملية شراء واحدة بين حسابات كثيرة، يحتفظ خادمنا بعدّاد استخدام لكل عملية شراء بصيغة مشفّرة باتجاه واحد (hash).</li>
+      <li><strong>المشتريات.</strong> جميع المدفوعات تتم عبر Apple، ولا نرى بيانات بطاقتك أبداً. تستلم RevenueCat (الولايات المتحدة) إيصالات الشراء والمنتجات التي اشتريتها ومعرّفك المجهول (وهو معرّفك لدى RevenueCat) لإدارة اشتراكك ومشتريات الكتب، وتخبر خادمنا إن كنت مشتركاً. وتستخدم RevenueCat هذه السجلات أيضاً لتعطينا إحصاءات عن الاشتراكات (مثل عدد من يبدأ الاشتراك أو يلغيه). ولمنع مشاركة عملية شراء واحدة بين حسابات كثيرة، يحتفظ خادمنا بعدّاد استخدام لكل عملية شراء بصيغة مشفّرة باتجاه واحد (hash). وتخبر RevenueCat شركة Meta أيضاً ببدء فترتك المجانية أو اشتراكك، مرتبطاً بجهازك فقط إذا سمحت بالتتبّع (انظر البند 13).</li>
     </ul>
 
     <h2>5. صور النباتات (التعرّف والتشخيص)</h2>
@@ -245,14 +259,24 @@
       <li>يمكنك إيقاف تذكيرات العناية من الإعدادات ← "إشعارات العناية"، أو إيقاف كل الإشعارات من إعدادات جهازك.</li>
     </ul>
 
-    <h2>13. لا إعلانات ولا تتبّع ولا تحليلات</h2>
-    <p>لا يعرض التطبيق إعلانات، ولا يتتبّعك عبر تطبيقات أو مواقع الشركات الأخرى، ولا يطلب إذن التتبّع في iOS، ولا يحتوي على أي أدوات إعلانات أو تحليلات (لا Meta/فيسبوك، ولا Google Analytics، ولا ما يشبهها). لا نبيع بياناتك ولا نشاركها مع وسطاء البيانات. قد يعرض التطبيق نافذة التقييم الخاصة بـ Apple.</p>
+    <h2>13. قياس الإعلانات مع Meta</h2>
+    <p>لا يعرض التطبيق إعلانات. نحن نعلن عن نبتتي على منصات Meta (فيسبوك وإنستغرام)، ونستخدم أداة Meta SDK من شركة <strong>Meta Platforms</strong> (Meta Platforms Ireland Ltd. وMeta Platforms, Inc. في الولايات المتحدة) لنعرف أي إعلاناتنا تجلب مستخدمين ومشتركين جدداً ولنحسّنها.</p>
+    <ul>
+      <li><strong>نافذة Apple هي التي تقرّر.</strong> أثناء الإعداد الأول، وقبل شاشة الاشتراك، يعرض التطبيق نافذة Apple "السماح بالتتبّع؟" مرة واحدة. ويمكنك تغيير إجابتك في أي وقت من إعدادات iPhone ← الخصوصية والأمن ← التتبّع.</li>
+      <li><strong>إذا سمحت بالتتبّع</strong>، يرسل التطبيق إلى Meta: أن التطبيق ثُبّت وفُتح، وأنك أنهيت صفحات التعريف، وأنك رأيت شاشة الاشتراك، وأنك ضغطت زر الشراء لإحدى الخطط (مع رمز تلك الخطة). ومع هذه الأحداث تستلم Meta معرّف الإعلانات لجهازك (IDFA)، ومعرّفاً تنشئه Meta لهذا التطبيق على جهازك، وبيانات أساسية عن الجهاز (الطراز، وإصدار iOS والتطبيق، واللغة، والمنطقة الزمنية)، وعنوان IP.</li>
+      <li><strong>إذا لم تسمح بالتتبّع</strong>، لا يقرأ التطبيق معرّف الإعلانات أبداً، ويخبر أداة Meta SDK بأن التتبّع متوقف. وتُرسل الأحداث نفسها (تثبيت التطبيق وفتحه، وإنهاء صفحات التعريف، ورؤية شاشة الاشتراك، والضغط على زر الشراء) إلى Meta <strong>بشكل محدود</strong>: دون معرّف الإعلانات ومع إيقاف "تتبّع المعلن"، فلا يحق لـ Meta استخدامها إلا في تقارير إعلانية إجمالية مجهولة الهوية (Aggregated Event Measurement)، لا لبناء ملف عنك ولا لربطك بتطبيقات ومواقع أخرى. وتستلم Meta معها بيانات أساسية عن الجهاز وعنوان IP.</li>
+      <li><strong>قبل أن تجيب</strong> على نافذة Apple، لا يرسل التطبيق أي حدث إلى Meta. وقد تتصل أداة Meta SDK بـ Meta لتحميل إعداداتها أو للإبلاغ عن أخطاء في الأداة نفسها، ويشمل ذلك بيانات تقنية مثل عنوان IP وطراز الجهاز وإصدار التطبيق، دون معرّف الإعلانات ودون أي معلومات عمّا تفعله في التطبيق.</li>
+      <li><strong>المشتريات.</strong> التطبيق نفسه لا يرسل المشتريات إلى Meta أبداً. يرسل مزوّد المشتريات RevenueCat إلى Meta، من خادم إلى خادم، بدء الفترة المجانية أو الاشتراك أو تجديده وشراء الكتب (المنتج والسعر والعملة والوقت). إذا سمحت بالتتبّع، ترتبط هذه الأحداث بمعرّف Meta لهذا التطبيق على جهازك؛ وإذا لم تسمح، تُرسل دون أي معرّف إعلانات أو معرّف من Meta، للتقارير الإجمالية فقط.</li>
+      <li>لا نرسل إلى Meta أبداً اسمك أو بريدك أو صورك أو نباتاتك أو حديقتك أو ملاحظاتك أو أسئلتك أو رسائل المحادثة، ولا نستخدم Meta لعرض إعلانات لك داخل التطبيق.</li>
+    </ul>
+    <p>لا نستخدم أي أداة تحليلات (لا Google Analytics ولا ما يشبهها)، ولا نبيع بياناتك ولا نشاركها مع وسطاء البيانات. قد يعرض التطبيق نافذة التقييم الخاصة بـ Apple.</p>
 
     <h2>14. لماذا نستخدم بياناتك (الأساس القانوني)</h2>
     <ul>
       <li><strong>لتقديم التطبيق واشتراكك</strong> (الحساب، المشتريات، استعادتها، عمليات التصوير وحفظها، الطقس، النصائح، الرد على رسائلك): تنفيذ العقد بيننا.</li>
       <li><strong>إرسال صورك ورسائل المحادثة وأسئلتك إلى مزوّد الذكاء الاصطناعي</strong>: موافقتك التي تعطيها بزر التصوير وزر بدء المحادثة وزر إرسال السؤال. يمكنك سحبها من الإعدادات ← "السماح بالوصول" ← "سحب الموافقة على التحليل بالذكاء الاصطناعي".</li>
       <li><strong>حدود الاستخدام، ومنع إساءة الاستخدام، والفحص، والأمان، والملاحظات والبلاغات، وحفظ الأسئلة المشتركة</strong>: مصلحتنا المشروعة في الحفاظ على خدمة آمنة ودقيقة وبتكلفة معقولة. يمكنك الاعتراض بمراسلتنا.</li>
+      <li><strong>قياس الإعلانات مع Meta</strong>: مع معرّف الإعلانات ومعرّف Meta لهذا التطبيق، موافقتك في نافذة التتبّع من Apple (ويمكنك سحبها من إعدادات iPhone ← الخصوصية والأمن ← التتبّع)؛ أما الأحداث المحدودة الإجمالية من دونهما، فمصلحتنا المشروعة في معرفة أي إعلاناتنا تنجح.</li>
     </ul>
 
     <h2>15. من يستلم بياناتك</h2>
@@ -260,13 +284,14 @@
       <li><strong>Supabase</strong> (خوادم في فرانكفورت، أوروبا): حسابك، وصور عمليات التصوير وسجلاتها، وعدّادات الاستخدام، والملاحظات والبلاغات، ورسائل "تواصل معنا"، ورمز Apple المشفّر، والبيانات المشتركة المحفوظة.</li>
       <li><strong>Expo (EAS Hosting)</strong> وتعمل على شبكة Cloudflare: تشغّل كود خادمنا، وتمر عبرها صورك ورسائلك وطلباتك أثناء إرسالها. وتوصل Expo أيضاً تحديثات التطبيق: عندما يبحث التطبيق عن تحديث، تستلم Expo عنوان IP ونوع الجهاز وإصدار التطبيق ومعرّف تثبيت عشوائياً غير مرتبط بحسابك.</li>
       <li><strong>OpenAI</strong> (الولايات المتحدة): تحلّل الصور، وتكتب ردود مستشار النباتات، وتجيب عن الأسئلة، وتكتب صفحات العناية والنصائح، وتفحص الرسائل والأسئلة للتأكد من سلامتها.</li>
-      <li><strong>RevenueCat</strong> (الولايات المتحدة): تدير الاشتراكات والمشتريات داخل التطبيق، وتعطينا إحصاءات عن الاشتراكات.</li>
+      <li><strong>RevenueCat</strong> (الولايات المتحدة): تدير الاشتراكات والمشتريات داخل التطبيق، وتعطينا إحصاءات عن الاشتراكات. وترسل أيضاً أحداث الفترة المجانية والاشتراك وشراء الكتب إلى Meta: مرتبطة بجهازك فقط إذا سمحت بالتتبّع، وإلا فبشكل محدود إجمالي (انظر البند 13).</li>
+      <li><strong>Meta Platforms</strong> (أيرلندا والولايات المتحدة): تستلم أحداث التطبيق وأحداث الشراء الموصوفة في البند 13، لقياس إعلاناتنا؛ مع معرّف الإعلانات فقط إذا سمحت بالتتبّع، وإلا فبشكل محدود للتقارير الإجمالية فقط. وتستخدم Meta هذه البيانات وفق شروطها وسياسة الخصوصية الخاصة بها (facebook.com/privacy/policy).</li>
       <li><strong>Apple</strong>: المدفوعات، وتسجيل الدخول بحساب Apple، والطقس (WeatherKit)، ونافذة التقييم.</li>
     </ul>
     <p>يعالج مزوّدونا البيانات وفق شروط معالجة البيانات الخاصة بهم، ويمنحونها حماية مساوية لهذه السياسة أو أقوى منها. يحتفظ مزوّدو الاستضافة بسجلات طلبات عادية (مثل عنوان IP والوقت) لفترة محدودة وفق قواعدهم، ونحن لا نكتب صورك أو رسائل المحادثة أو أسئلتك أو رسائل التواصل في سجلاتنا. قد نكشف البيانات إذا طلب القانون ذلك.</p>
 
     <h2>16. نقل البيانات خارج بلدك</h2>
-    <p>نحن في الإمارات. تُحفظ بياناتك في أوروبا (Supabase)، وتُعالج في الولايات المتحدة ودول أخرى تعمل فيها OpenAI وRevenueCat وExpo وCloudflare وApple. حيث يتطلّب القانون ذلك (مثلاً للمستخدمين في الاتحاد الأوروبي أو المملكة المتحدة)، يعتمد هذا النقل على البنود التعاقدية القياسية لدى المزوّدين أو ضمانات معتمدة أخرى.</p>
+    <p>نحن في الإمارات. تُحفظ بياناتك في أوروبا (Supabase)، وتُعالج في الولايات المتحدة ودول أخرى تعمل فيها OpenAI وRevenueCat وExpo وCloudflare وApple وMeta. حيث يتطلّب القانون ذلك (مثلاً للمستخدمين في الاتحاد الأوروبي أو المملكة المتحدة)، يعتمد هذا النقل على البنود التعاقدية القياسية لدى المزوّدين أو ضمانات معتمدة أخرى.</p>
 
     <h2>17. مدة الاحتفاظ بالبيانات</h2>
     <ul>
@@ -280,6 +305,8 @@
       <li>رمز Apple المشفّر: حتى تحذف حسابك (ثم يُلغى ويُحذف).</li>
       <li>البيانات لدى OpenAI: حتى 30 يوماً.</li>
       <li>سجلات الشراء لدى RevenueCat: حتى تحذف حسابك. وتحتفظ Apple بسجلات معاملاتها الخاصة.</li>
+      <li>معرّف Meta لهذا التطبيق على جهازك، المحفوظ لدى RevenueCat (إذا سمحت بالتتبّع فقط): حتى تحذف حسابك، ويُزال عند فتح التطبيق التالي إذا أوقفت التتبّع.</li>
+      <li>البيانات لدى Meta: المدة التي تسمح بها شروط Meta وسياسة الخصوصية الخاصة بها، ولا نستطيع حذفها نيابة عنك (يمكنك طلب ذلك من Meta).</li>
       <li>محادثة مستشار النباتات: لا تُحفظ على خادمنا أبداً.</li>
       <li>سجلات طلبات الاستضافة: فترة محدودة يحددها كل مزوّد.</li>
     </ul>
@@ -289,6 +316,7 @@
     <ul>
       <li><strong>حذف كل شيء:</strong> داخل التطبيق، الإعدادات ← "إدارة الحساب" ← "حذف الحساب وكل البيانات" (وإذا لم تسجّل الدخول: الإعدادات ← "حذف بياناتي"، أو الإعدادات ← "تسجيل الدخول" ← "حذف بياناتي من نبتتي"). يحذف هذا حسابك نهائياً، وكل بياناتك على خادمنا (عمليات التصوير، الملاحظات والبلاغات، رسائل التواصل، عدّادات الاستخدام)، وكل الصور وصور الشاشة في مجلدك، وسجلات الشراء لدى RevenueCat، ويلغي ربط حسابك بـ Apple. ويمسح أيضاً بيانات التطبيق وصوره والإشعارات المجدولة من جهازك. لا يلغي اشتراك App Store، ويمكنك إدارته من إعدادات Apple ID. لا يشمل الحذف النسخ التي تحتفظ بها OpenAI حتى 30 يوماً، ولا الأسئلة المشتركة غير المرتبطة بك.</li>
       <li><strong>سحب موافقة الذكاء الاصطناعي:</strong> الإعدادات ← "السماح بالوصول" ← "سحب الموافقة على التحليل بالذكاء الاصطناعي". يشمل ذلك الصور وإجابات التشخيص ورسائل المستشار والأسئلة. لا يُرسل شيء إلى مزوّد الذكاء الاصطناعي حتى توافق من جديد.</li>
+      <li><strong>إيقاف قياس الإعلانات:</strong> إعدادات iPhone ← الخصوصية والأمن ← التتبّع ← أوقف نبتتي. من فتح التطبيق التالي لا يُستخدم معرّف الإعلانات، وتزيل RevenueCat معرّف Meta من سجل مشترياتك، ولا تستلم Meta إلا الأحداث المحدودة الإجمالية الموصوفة في البند 13. أما البيانات التي استلمتها Meta من قبل فتبقى وفق شروط Meta.</li>
       <li><strong>مسح محادثة المستشار:</strong> من داخل المحادثة على جهازك.</li>
       <li><strong>أي طلب آخر</strong> (مثل نسخة من بياناتك، أو حذف عملية تصوير واحدة محفوظة): راسلنا على <a href="mailto:support@massalhafzco.com">support@massalhafzco.com</a>. لأن الحساب مجهول، قد نحتاج إلى معلومات من التطبيق لإيجاد بياناتك، والحذف من داخل التطبيق هو الأسرع. نرد خلال 30 يوماً.</li>
     </ul>
