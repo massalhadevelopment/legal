@@ -18,9 +18,9 @@
 
   <h2>2. Summary</h2>
   <ul>
-    <li>No sign-up is needed. The app creates an anonymous account. Sign in with Apple is optional.</li>
-    <li>When you create a look, your photo is sent to our server, which sends it to our AI provider, <strong>OpenAI (USA)</strong>, to generate the result. OpenAI does not use it to train its models.</li>
-    <li>Your uploaded photo is deleted from our server after <strong>24 hours</strong>. Generated images are deleted from our server after <strong>30 days</strong>, or earlier when you delete them in History or delete your account.</li>
+    <li>No sign-up is needed. The app creates an anonymous account for you, with no name, email or password.</li>
+    <li>When you create a look or an analysis, your photo is sent to our server, which sends it to our AI provider, <strong>OpenAI (USA)</strong>, to create the result. OpenAI does not use it to train its models.</li>
+    <li>Your uploaded photo is deleted from our server as soon as your look is finished, and within <strong>24 hours</strong> at the latest. Generated images are deleted from our server after <strong>30 days</strong>, or earlier when you delete them in «إطلالاتي» (My looks) or delete your data in the app. Analysis photos and results are not stored on our server.</li>
     <li>Your photos and results are never used to train AI, never used to recognise or identify anyone, and never used for advertising.</li>
     <li>The app is for adults (18+) and for photos of yourself only.</li>
     <li>No ads, no tracking, no advertising or analytics SDKs, and we never sell your data.</li>
@@ -28,34 +28,35 @@
 
   <h2>3. Your photos and the AI</h2>
   <ul>
-    <li><strong>Consent.</strong> Before your first photo, the app asks for your consent: the photo button says "موافق، التقط أو اختر صورة" and a line under it explains that your photo is sent to an external AI provider to create the result.</li>
+    <li><strong>Consent.</strong> Every time you add a photo, the app first shows a photo guide. Its buttons start with «موافق» ("I agree", for example «موافق، التقط أو اختر صورة»), and a line under them explains that your photo is sent to an external AI provider to create the result or the analysis. Nothing is sent before you tap one of them.</li>
     <li><strong>Which photos.</strong> A selfie or face photo for most styles, a photo of your hand for nail art, or a full-body photo for outfits and body edits. You take it with the camera or choose it from your photo library; the app only gets the photo you pick. Before sending, the app resizes the photo (long side up to 1024 pixels, JPEG); the resized copy carries no location data.</li>
     <li><strong>Only your own photo, adults only.</strong> Upload only photos of yourself. Don't upload photos of other people, and never photos of children. Our AI checks photos and refuses a photo that seems to show a child, more than one person, no face, or sensitive content.</li>
-    <li><strong>Creating a look (try-on).</strong> Our server stores your photo in your private folder in Supabase Storage (servers in the EU) and sends it, with the style you picked, to <strong>OpenAI (USA)</strong>, which generates the new image. Our server stores the generated image in the same private folder, and the app downloads it to your device. We also keep a record of each try-on (the kind of try-on, the style you picked, its status and time) so the result can be delivered, a retry is not charged twice, and usage limits work.</li>
-    <li><strong>Face-shape and seasonal colour analysis.</strong> Your photo (and the gender you chose in the app, if any, so the advice fits you) is sent through our server to OpenAI, which returns a text analysis. Our server does <strong>not</strong> store the photo or the analysis; the result is kept on your device.</li>
-    <li><strong>How long.</strong> Uploaded photos are deleted from our server <strong>24 hours</strong> after upload. Generated images and try-on records are deleted after <strong>30 days</strong>, or earlier when you delete a look in History or delete your account.</li>
+    <li><strong>Creating a look (try-on).</strong> Our server stores your photo in your private folder in Supabase Storage (servers in the EU, Ireland) and sends it, with the style you picked and your gender if you chose one in the app (so the result fits you; tools made only for men, such as beards, always use male), to <strong>OpenAI (USA)</strong>, which generates the new image. Our server stores the generated image in the same private folder, and the app downloads it to your device. We also keep a record of each try-on (the kind of try-on, the style you picked, the gender sent with it, its status, the reason if your photo was refused, and the time) so the result can be delivered, a retry is not charged twice, and usage limits work.</li>
+    <li><strong>Face-shape and seasonal colour analysis.</strong> Your photo, and your gender if you chose one, are sent through our server to OpenAI, which returns a text analysis. For the face-shape analysis it also returns the approximate positions of a few points on your face (such as the chin and the corners of the eyes and mouth), which the app uses only to draw the measurements on your photo. Our server does <strong>not</strong> store the photo, the points or the analysis. It only keeps a short note that the request was counted (with no face data), so a repeated request isn't charged twice, and deletes that note within 48 hours. The report is shown in the app and is not kept after you close it, unless you save or share it.</li>
+    <li><strong>How long.</strong> Uploaded photos are deleted from our server as soon as the look is finished (ready, refused or failed), and within <strong>24 hours</strong> at the latest. Generated images and try-on records (including the gender sent with them) are deleted after <strong>30 days</strong>, or earlier when you delete a look in «إطلالاتي» (My looks) or delete your data in the app.</li>
     <li><strong>At OpenAI.</strong> OpenAI processes your photo only to give you the result, as our processor. It does not use data sent through its API to train its models, and may keep it for up to 30 days to monitor abuse, then deletes it. We send OpenAI a one-way coded (hashed) version of your account ID for abuse detection, never the ID itself, and never your name.</li>
-    <li><strong>No face recognition.</strong> We don't create or store face templates or other biometric identifiers, and we never use your photos to identify you or anyone else.</li>
+    <li><strong>No face recognition.</strong> We don't create or store face templates or other biometric identifiers, the face-shape points are never stored on our server, and we never use your photos to identify you or anyone else.</li>
   </ul>
 
   <h2>4. Data that stays on your device</h2>
-  <p>The following is stored on your device and is <strong>not sent to us</strong>:</p>
+  <p>The following is stored only on your device and is <strong>not sent to us</strong>:</p>
   <ul>
-    <li>History: copies of your generated looks, the photos you used for them and your analysis results.</li>
-    <li>Your settings, the gender you chose (so the app addresses you correctly and shows fitting styles), your consent choices and favourites.</li>
+    <li>«إطلالاتي» (My looks): copies of your generated looks and the photos you used for them.</li>
+    <li>Your settings, your consent choices and your favourites.</li>
   </ul>
-  <p>Data on your device can be included in your own device backup (for example iCloud Backup) if you use one. If you tap Save, the app saves the image to your photo library (with your permission); if you tap Share, the image goes to the app you choose. Deleting a look in History, deleting your account in the app or deleting the app removes the app's copies from the device (images you saved to your photo library or shared stay there).</p>
+  <p>Your gender setting is also kept on your device, so the app addresses you correctly and shows fitting styles. If you chose one, it is sent with each look and analysis (see section 3).</p>
+  <p>Data on your device can be included in your own device backup (for example iCloud Backup) if you use one. If you tap Save, the app saves the image to your photo library (with your permission); if you tap Share, the image goes to the app you choose. Deleting a look in «إطلالاتي», deleting your data in the app or deleting the app removes the app's copies from the device (images you saved to your photo library or shared stay there).</p>
 
   <h2>5. Your account and purchases</h2>
   <ul>
-    <li><strong>Anonymous account.</strong> On first launch the app creates an anonymous account with Supabase (servers in the EU). It holds a random user ID and the date it was created, so that purchases, usage limits and your try-ons work. It does not contain your name or email.</li>
-    <li><strong>Sign in with Apple (optional)</strong> lets you keep your subscription on a new device. The app asks Apple only for your name, not your email. We receive your Apple account ID and, if you choose to share it, your name, which we keep with your account. We also keep an Apple sign-in token, <strong>encrypted</strong>, only so that we can revoke your Apple sign-in when you delete your account.</li>
-    <li><strong>Purchases.</strong> Payments are handled by Apple; we never see your card details. RevenueCat (USA) receives your purchase receipts, the products you bought and your anonymous user ID (which is your RevenueCat ID) to manage your subscription, and tells our server whether you are a subscriber or in the free trial. RevenueCat also uses these records to give us subscription statistics (for example how many people start or cancel a subscription).</li>
-    <li><strong>Usage counters.</strong> To apply the free trial's 5 looks and the fair-use limits, our server counts how many looks and analyses you used. To stop one free trial from being used again by deleting the account or reinstalling, we also keep a counter per purchase under a one-way coded (hashed) ID that does not contain your user ID; it is kept for up to 1 year, also after you delete your account.</li>
+    <li><strong>Anonymous account.</strong> On first launch the app creates an anonymous account with Supabase (servers in the EU, Ireland). It holds a random user ID and the date it was created, so that purchases, usage limits and your try-ons work; for security, Supabase also records the IP address and device type of your session. It does not contain your name or email.</li>
+    <li><strong>Purchases.</strong> Payments are handled by Apple; we never see your card details. RevenueCat (USA) receives your purchase receipts, the products you bought, your anonymous user ID (which is your RevenueCat ID) and basic device information (iOS and app version, language and App Store country) to manage your subscription, and tells our server whether you are a subscriber or in the free trial. RevenueCat also uses these records to give us subscription statistics (for example how many people start or cancel a subscription).</li>
+    <li><strong>Fair use.</strong> Paid plans have a daily fair-use limit (up to 30 looks a day, and a separate daily limit for analyses) to keep the service fast for everyone.</li>
+    <li><strong>Usage counters.</strong> To apply the free trial's 5 looks and the fair-use limits, our server counts how many looks and analyses you used. To stop one free trial from being used again by deleting your data or reinstalling, we also keep a counter per purchase under a one-way coded (hashed) ID that does not contain your user ID; it is kept for up to 1 year, also after you delete your data.</li>
   </ul>
 
   <h2>6. Feedback and support</h2>
-  <p>If you send feedback in the app (Settings → feedback), we store the type you chose (for example a suggestion, a problem or a refund question), your text, any screenshots you attach, your user ID, the app version and the device model and iOS version, and your email address if you add one, so we can look into it and answer you. Feedback and its screenshots are deleted after <strong>180 days</strong>, or earlier when you delete your account. We can't issue refunds ourselves: refunds for App Store purchases are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. When you email us, we keep the conversation for as long as we need it to handle your request.</p>
+  <p>If you send feedback in the app (Settings → «الملاحظات»), we store the type you chose (a suggestion, a problem or a refund question), your text, any screenshots you attach (up to 3), your user ID, the app version and your iOS version, so we can look into it. If you report a result from the image viewer («إبلاغ عن الصورة»), we also store which look you reported. The form doesn't ask for your email; if you want a reply, email us. Feedback and its screenshots are deleted after <strong>180 days</strong>, or earlier when you delete your data in the app. We can't issue refunds ourselves: refunds for App Store purchases are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. When you email us, we keep the conversation for as long as we need it to handle your request.</p>
 
   <h2>7. Notifications</h2>
   <p>The app may send local notifications created on your device (for example, to tell you that your look is ready). We have no push notification server and send no marketing notifications. You can turn notifications off in your device settings.</p>
@@ -66,48 +67,47 @@
   <h2>9. Why we use your data (legal bases)</h2>
   <ul>
     <li><strong>To provide the app and your subscription</strong> (account, purchases, restoring purchases, try-ons and analyses, storing your results, answering your feedback): performance of our contract with you.</li>
-    <li><strong>Sending your photo to the AI provider</strong>: your consent, given on the photo button. You can stop at any time by not adding new photos; to remove what we hold, delete your looks in History or delete your account.</li>
+    <li><strong>Sending your photo to the AI provider</strong>: your consent, which you give each time you add a photo by tapping a «موافق» button. You can stop at any time by not adding new photos; to remove what we hold, delete your looks in «إطلالاتي» or delete your data in the app.</li>
     <li><strong>Usage limits, abuse prevention, security and the per-purchase trial counter</strong>: our legitimate interests in keeping the service safe and affordable. You can object by emailing us.</li>
   </ul>
 
   <h2>10. Who receives your data</h2>
   <ul>
     <li><strong>OpenAI</strong> (USA), our AI processor: generates the try-on images and the face-shape and seasonal colour analyses, and checks photos for safety.</li>
-    <li><strong>Supabase</strong> (servers in the EU): hosts your account, stores uploaded photos and generated images in your private folder, try-on records, usage counters, feedback and screenshots, and the encrypted Apple sign-in token.</li>
+    <li><strong>Supabase</strong> (servers in the EU, Ireland): hosts your anonymous account, stores uploaded photos and generated images in your private folder, try-on records, usage counters, and feedback with its screenshots.</li>
     <li><strong>Expo (EAS Hosting)</strong>, which runs on Cloudflare's network: runs our server code; your photos and requests pass through it in transit. Expo also delivers app updates: when the app checks for an update, Expo receives your IP address, the device platform and app version, and a random installation ID that is not linked to your account.</li>
     <li><strong>RevenueCat</strong> (USA): manages subscriptions and gives us subscription statistics.</li>
-    <li><strong>Apple</strong>: payments, Sign in with Apple and the rating prompt.</li>
+    <li><strong>Apple</strong>: payments and the rating prompt.</li>
   </ul>
-  <p>Our providers process data under their data processing terms. Our hosting providers keep standard request logs (such as IP address and time) for a limited period under their own retention rules; our server briefly uses your IP address to limit abuse and does not store it. We do not write your photos or feedback text to our logs. We may disclose data if the law requires it.</p>
+  <p>Our providers process data only to provide their service to us, under their data processing terms, and must protect it at least as well as this policy describes. Our hosting providers keep standard request logs (such as IP address and time) for a limited period under their own retention rules; our server briefly uses your IP address to limit abuse and does not store it. We do not write your photos or feedback text to our logs. We may disclose data if the law requires it.</p>
 
   <h2>11. International transfers</h2>
   <p>We are based in the UAE. Your data is stored in the EU (Supabase) and processed in the USA and other countries where OpenAI, RevenueCat, Expo, Cloudflare and Apple operate. Where the law requires it (for example for users in the EU or UK), these transfers rely on the providers' Standard Contractual Clauses or other approved safeguards.</p>
 
   <h2>12. How long we keep data</h2>
   <ul>
-    <li>Uploaded photos on our server: 24 hours.</li>
-    <li>Generated images and try-on records on our server: 30 days, or earlier when you delete the look in History or delete your account.</li>
-    <li>Photos sent for a face-shape or seasonal colour analysis: not stored on our server.</li>
+    <li>Uploaded photos on our server: until the look is finished (ready, refused or failed), 24 hours at the latest.</li>
+    <li>Generated images and try-on records (including the gender sent with them) on our server: 30 days, or earlier when you delete the look in «إطلالاتي» or delete your data in the app.</li>
+    <li>Photos, points and results of a face-shape or seasonal colour analysis: not stored on our server. Only a note that the request was counted (no face data) is kept, for up to 48 hours.</li>
     <li>Data at OpenAI: up to 30 days.</li>
-    <li>Data on your device (History, settings): until you delete it, delete your account or delete the app.</li>
-    <li>Anonymous or Apple account (and your name, if you shared it): until you delete your account.</li>
-    <li>Usage counters: until their period ends (daily counters: a few days; the free-trial counter: up to 1 year). Per-purchase trial counters (hashed, without your user ID): up to 1 year, also after account deletion.</li>
-    <li>Feedback and screenshots: 180 days, or until you delete your account if that is sooner.</li>
-    <li>Encrypted Apple sign-in token: until you delete your account (it is then revoked and deleted).</li>
-    <li>Purchase records at RevenueCat: until you delete your account. Apple keeps its own transaction records.</li>
+    <li>Data on your device («إطلالاتي», settings): until you delete it, delete your data in the app or delete the app.</li>
+    <li>Anonymous account: until you delete your data in the app.</li>
+    <li>Usage counters: until their period ends (daily counters: a few days; the free-trial counter: up to 1 year). Per-purchase trial counters (hashed, without your user ID): up to 1 year, also after you delete your data.</li>
+    <li>Feedback and screenshots: 180 days, or until you delete your data in the app if that is sooner.</li>
+    <li>Purchase records at RevenueCat: until you delete your data in the app. Apple keeps its own transaction records.</li>
     <li>Hosting request logs: a limited period set by each provider.</li>
   </ul>
 
   <h2>13. Your rights and how to delete your data</h2>
   <p>Depending on where you live (for example in the EU or UK), you have the right to access, correct, delete or receive a copy of your data, to restrict or object to its use, and to withdraw consent at any time (this does not affect what was done before). You can also complain to your local data protection authority. How to exercise them:</p>
   <ul>
-    <li><strong>Delete one look:</strong> in the app, «إطلالاتي» → History → tap the trash icon on a look. This deletes it from your device and its generated image from our server.</li>
-    <li><strong>Delete everything:</strong> in the app, Settings → delete account. This permanently deletes your account, your try-on records, usage counters (except the hashed per-purchase trial counter), feedback, all photos, generated images and screenshots in your folder, and your RevenueCat customer record, and revokes your Sign in with Apple. It also wipes the app's data and scheduled notifications on your device. It does not cancel an App Store subscription: manage that in your Apple ID settings. Copies kept by OpenAI for up to 30 days are not affected.</li>
+    <li><strong>Delete one look:</strong> in the app, «إطلالاتي» (My looks) → «تعديل» (Edit) → the trash icon on a look → «حذف» (Delete). This deletes it from your device, and its generated image and record from our server.</li>
+    <li><strong>Delete everything:</strong> in the app, Settings → «حذف حسابي وبياناتي» (Delete my account and data). This permanently deletes your account, your try-on records, usage counters (except the hashed per-purchase trial counter), feedback, all photos, generated images and screenshots in your folder, and your RevenueCat customer record. It also wipes the app's data, photos and scheduled notifications on your device. It does not cancel an App Store subscription: manage that in your Apple ID settings. Copies kept by OpenAI for up to 30 days are not affected.</li>
     <li><strong>Anything else</strong> (for example a copy of your data): email <a href="mailto:support@massalhafzco.com">support@massalhafzco.com</a>. Because the account is anonymous, we may need details from the app to find your data; in-app deletion is the fastest way. We reply within 30 days.</li>
   </ul>
 
   <h2>14. Security</h2>
-  <p>Data is sent over encrypted connections (HTTPS). Your photos and generated images are kept in a private storage folder that only our server can access; the app receives a generated image through a short-lived link (valid for 1 hour). The Apple sign-in token is stored encrypted. No method is 100% secure, so we keep photos on our servers for as short a time as possible.</p>
+  <p>Data is sent over encrypted connections (HTTPS). Your photos and generated images are kept in a private storage folder that only our server can access; the app receives a generated image through a short-lived link (valid for 1 hour). No method is 100% secure, so we keep photos on our servers for as short a time as possible.</p>
 
   <h2>15. Age and children</h2>
   <p>Talati is for adults aged <strong>18 and over</strong>. It is not directed to children, and we do not knowingly collect personal data from anyone under 18. Photos of children must not be uploaded, and the app refuses photos that seem to show a child. If you believe a child has used the app or that a child's photo was sent to us, contact us and we will delete it.</p>
@@ -131,9 +131,9 @@
 
     <h2>2. الخلاصة</h2>
     <ul>
-      <li>لا تحتاج إلى التسجيل، فالتطبيق ينشئ حساباً مجهولاً. تسجيل الدخول بحساب Apple اختياري.</li>
-      <li>عندما تصنع إطلالة، تُرسل صورتك إلى خادمنا، الذي يرسلها إلى مزوّد الذكاء الاصطناعي <strong>OpenAI (الولايات المتحدة)</strong> لإعداد النتيجة. لا تستخدمها OpenAI لتدريب نماذجها.</li>
-      <li>تُحذف صورتك المرفوعة من خادمنا بعد <strong>24 ساعة</strong>. وتُحذف الصور الناتجة من خادمنا بعد <strong>30 يوماً</strong>، أو قبل ذلك عند حذفها من السجل أو حذف حسابك.</li>
+      <li>لا تحتاج إلى التسجيل، فالتطبيق ينشئ لك حساباً مجهولاً، بدون اسم أو بريد إلكتروني أو كلمة مرور.</li>
+      <li>عندما تصنع إطلالة أو تحليلاً، تُرسل صورتك إلى خادمنا، الذي يرسلها إلى مزوّد الذكاء الاصطناعي <strong>OpenAI (الولايات المتحدة)</strong> لإعداد النتيجة. لا تستخدمها OpenAI لتدريب نماذجها.</li>
+      <li>تُحذف صورتك المرفوعة من خادمنا فور انتهاء إطلالتك، وخلال <strong>24 ساعة</strong> كحد أقصى. وتُحذف الصور الناتجة من خادمنا بعد <strong>30 يوماً</strong>، أو قبل ذلك عند حذفها من «إطلالاتي» أو حذف بياناتك من التطبيق. صور التحليل ونتائجه لا تُحفظ على خادمنا.</li>
       <li>لا تُستخدم صورك ونتائجك أبداً لتدريب الذكاء الاصطناعي، ولا للتعرّف على أي شخص، ولا للإعلانات.</li>
       <li>التطبيق للبالغين (18 عاماً فأكثر)، ولصورك أنت فقط.</li>
       <li>لا إعلانات، ولا تتبّع، ولا أدوات إعلانات أو تحليلات، ولا نبيع بياناتك أبداً.</li>
@@ -141,34 +141,35 @@
 
     <h2>3. صورك والذكاء الاصطناعي</h2>
     <ul>
-      <li><strong>الموافقة.</strong> قبل أول صورة يطلب التطبيق موافقتك: زر الصورة مكتوب عليه "موافق، التقط أو اختر صورة"، وتحته سطر يوضّح أن صورتك تُرسل إلى مزوّد ذكاء اصطناعي خارجي لإعداد النتيجة.</li>
+      <li><strong>الموافقة.</strong> في كل مرة تضيف فيها صورة، يعرض التطبيق أولاً دليل الصورة. تبدأ أزراره بكلمة «موافق» (مثل «موافق، التقط أو اختر صورة»)، وتحتها سطر يوضّح أن صورتك تُرسل إلى مزوّد ذكاء اصطناعي خارجي لإعداد النتيجة أو التحليل. لا يُرسل شيء قبل أن تضغط أحدها.</li>
       <li><strong>أي صور.</strong> صورة سيلفي أو صورة للوجه لمعظم الستايلات، أو صورة ليدك لتصميم الأظافر، أو صورة لكامل الجسم للملابس وتعديل الجسم. تلتقطها بالكاميرا أو تختارها من ألبوم الصور، ولا يصل التطبيق إلا إلى الصورة التي تختارها. قبل الإرسال يصغّر التطبيق الصورة (أطول ضلع حتى 1024 بكسل، بصيغة JPEG)، والنسخة المصغّرة لا تحمل بيانات الموقع.</li>
       <li><strong>صورتك أنت فقط، وللبالغين فقط.</strong> ارفع صورك أنت فقط. لا ترفع صور أشخاص آخرين، ولا صور أطفال أبداً. يفحص ذكاؤنا الاصطناعي الصور ويرفض الصورة التي يبدو أنها لطفل، أو فيها أكثر من شخص، أو لا يظهر فيها وجه، أو فيها محتوى حساس.</li>
-      <li><strong>صنع إطلالة (التجربة).</strong> يحفظ خادمنا صورتك في مجلدك الخاص في Supabase Storage (خوادم في أوروبا)، ويرسلها مع الستايل الذي اخترته إلى <strong>OpenAI (الولايات المتحدة)</strong> التي تنشئ الصورة الجديدة. يحفظ خادمنا الصورة الناتجة في المجلد الخاص نفسه، ثم يحمّلها التطبيق إلى جهازك. ونحتفظ أيضاً بسجل لكل تجربة (نوعها، والستايل الذي اخترته، وحالتها، والوقت) حتى تصلك النتيجة، ولا تُحسب إعادة المحاولة مرتين، وتعمل حدود الاستخدام.</li>
-      <li><strong>تحليل شكل الوجه والألوان الموسمية.</strong> تُرسل صورتك (والجنس الذي اخترته في التطبيق إن اخترته، لتناسبك النصائح) عبر خادمنا إلى OpenAI، التي تعيد تحليلاً مكتوباً. خادمنا <strong>لا</strong> يحفظ الصورة ولا التحليل، والنتيجة تبقى على جهازك.</li>
-      <li><strong>مدة الحفظ.</strong> تُحذف الصور المرفوعة من خادمنا بعد <strong>24 ساعة</strong> من رفعها. وتُحذف الصور الناتجة وسجلات التجارب بعد <strong>30 يوماً</strong>، أو قبل ذلك عند حذف الإطلالة من السجل أو حذف حسابك.</li>
-      <li><strong>لدى OpenAI.</strong> تعالج OpenAI صورتك فقط لإعطائك النتيجة، بصفتها معالجاً للبيانات لصالحنا. لا تستخدم البيانات المرسلة عبر واجهتها البرمجية لتدريب نماذجها، وقد تحتفظ بها حتى 30 يوماً لمراقبة إساءة الاستخدام ثم تحذفها. نرسل إلى OpenAI نسخة مشفّرة باتجاه واحد (hash) من معرّف حسابك لكشف إساءة الاستخدام، وليس المعرّف نفسه، ولا نرسل اسمك أبداً.</li>
-      <li><strong>لا تعرّف على الوجوه.</strong> لا ننشئ ولا نحفظ بصمات وجه أو أي معرّفات حيوية، ولا نستخدم صورك أبداً لتحديد هويتك أو هوية أي شخص آخر.</li>
+      <li><strong>صنع إطلالة (التجربة).</strong> يحفظ خادمنا صورتك في مجلدك الخاص في Supabase Storage (خوادم في الاتحاد الأوروبي، أيرلندا)، ويرسلها مع الستايل الذي اخترته، ومع جنسك إن اخترته في التطبيق (لتناسبك النتيجة، والأدوات الخاصة بالرجال مثل اللحية تُرسل دائماً على أنها لذكر)، إلى <strong>OpenAI (الولايات المتحدة)</strong> التي تنشئ الصورة الجديدة. يحفظ خادمنا الصورة الناتجة في المجلد الخاص نفسه، ثم يحمّلها التطبيق إلى جهازك. ونحتفظ أيضاً بسجل لكل تجربة (نوعها، والستايل الذي اخترته، والجنس المرسل معها، وحالتها، وسبب رفض الصورة إن رُفضت، والوقت) حتى تصلك النتيجة، ولا تُحسب إعادة المحاولة مرتين، وتعمل حدود الاستخدام.</li>
+      <li><strong>تحليل شكل الوجه والألوان الموسمية.</strong> تُرسل صورتك، وجنسك إن اخترته، عبر خادمنا إلى OpenAI، التي تعيد تحليلاً مكتوباً. وفي تحليل شكل الوجه تعيد أيضاً مواضع تقريبية لبضع نقاط على وجهك (مثل الذقن وزوايا العينين والفم)، يستخدمها التطبيق فقط لرسم القياسات على صورتك. خادمنا <strong>لا</strong> يحفظ الصورة ولا النقاط ولا التحليل. يحفظ فقط ملاحظة قصيرة بأن الطلب قد حُسب (بدون أي بيانات للوجه)، حتى لا يُحسب الطلب المكرّر مرتين، ويحذفها خلال 48 ساعة. يظهر التقرير في التطبيق ولا يُحفظ بعد إغلاقه، إلا إذا حفظته أو شاركته.</li>
+      <li><strong>مدة الحفظ.</strong> تُحذف الصور المرفوعة من خادمنا فور انتهاء الإطلالة (جاهزة أو مرفوضة أو فاشلة)، وخلال <strong>24 ساعة</strong> كحد أقصى. وتُحذف الصور الناتجة وسجلات التجارب (ومعها الجنس المرسل) بعد <strong>30 يوماً</strong>، أو قبل ذلك عند حذف الإطلالة من «إطلالاتي» أو حذف بياناتك من التطبيق.</li>
+      <li><strong>لدى OpenAI.</strong> تعالج OpenAI صورتك فقط لإعطائك النتيجة، بصفتها معالجاً للبيانات لصالحنا. لا تستخدم البيانات المرسلة عبر واجهتها البرمجية لتدريب نماذجها، وقد تحتفظ بها حتى 30 يوماً لمراقبة إساءة الاستخدام ثم تحذفها. نرسل إلى OpenAI رمزاً مُجزّأً (hash) لا يمكن عكسه من معرّف حسابك لكشف إساءة الاستخدام، وليس المعرّف نفسه، ولا نرسل اسمك أبداً.</li>
+      <li><strong>لا تعرّف على الوجوه.</strong> لا ننشئ ولا نحفظ بصمات وجه أو أي معرّفات حيوية، ولا تُحفظ نقاط تحليل شكل الوجه على خادمنا أبداً، ولا نستخدم صورك أبداً لتحديد هويتك أو هوية أي شخص آخر.</li>
     </ul>
 
     <h2>4. بيانات تبقى على جهازك</h2>
-    <p>البيانات التالية تُحفظ على جهازك و<strong>لا تُرسل إلينا</strong>:</p>
+    <p>البيانات التالية تُحفظ على جهازك فقط و<strong>لا تُرسل إلينا</strong>:</p>
     <ul>
-      <li>السجل: نسخ من إطلالاتك الناتجة، والصور التي استخدمتها لها، ونتائج التحليل.</li>
-      <li>إعداداتك، والجنس الذي اخترته (ليخاطبك التطبيق بشكل صحيح ويعرض الستايلات المناسبة)، واختياراتك للموافقة، والمفضّلة.</li>
+      <li>«إطلالاتي»: نسخ من إطلالاتك الناتجة، والصور التي استخدمتها لها.</li>
+      <li>إعداداتك، واختياراتك للموافقة، والمفضّلة.</li>
     </ul>
-    <p>قد تدخل بيانات جهازك في النسخة الاحتياطية الخاصة بك (مثل نسخ iCloud الاحتياطي) إذا كنت تستخدمها. إذا ضغطت "حفظ"، يحفظ التطبيق الصورة في ألبوم الصور (بإذنك)، وإذا ضغطت "مشاركة"، تذهب الصورة إلى التطبيق الذي تختاره. حذف إطلالة من السجل، أو حذف حسابك من داخل التطبيق، أو حذف التطبيق يزيل نسخ التطبيق من الجهاز (الصور التي حفظتها في ألبوم الصور أو شاركتها تبقى هناك).</p>
+    <p>ويُحفظ إعداد الجنس أيضاً على جهازك ليخاطبك التطبيق بشكل صحيح ويعرض الستايلات المناسبة. وإذا اخترته، يُرسل مع كل إطلالة وكل تحليل (انظر القسم 3).</p>
+    <p>قد تدخل بيانات جهازك في النسخة الاحتياطية الخاصة بك (مثل نسخ iCloud الاحتياطي) إذا كنت تستخدمها. إذا ضغطت "حفظ"، يحفظ التطبيق الصورة في ألبوم الصور (بإذنك)، وإذا ضغطت "مشاركة"، تذهب الصورة إلى التطبيق الذي تختاره. حذف إطلالة من «إطلالاتي»، أو حذف بياناتك من داخل التطبيق، أو حذف التطبيق يزيل نسخ التطبيق من الجهاز (الصور التي حفظتها في ألبوم الصور أو شاركتها تبقى هناك).</p>
 
     <h2>5. حسابك ومشترياتك</h2>
     <ul>
-      <li><strong>حساب مجهول.</strong> عند أول فتح ينشئ التطبيق حساباً مجهولاً لدى Supabase (خوادم في أوروبا). يحتوي على معرّف عشوائي وتاريخ الإنشاء فقط، حتى تعمل المشتريات وحدود الاستخدام وتجاربك. لا يحتوي على اسمك أو بريدك.</li>
-      <li><strong>تسجيل الدخول بحساب Apple (اختياري)</strong> يتيح لك الاحتفاظ باشتراكك على جهاز جديد. يطلب التطبيق من Apple اسمك فقط، وليس بريدك. نستلم معرّف حسابك في Apple، واسمك إن اخترت مشاركته، ونحفظه مع حسابك. ونحتفظ أيضاً برمز دخول من Apple <strong>مشفّراً</strong>، فقط لنلغي ربط حسابك بـ Apple عند حذف حسابك.</li>
-      <li><strong>المشتريات.</strong> جميع المدفوعات تتم عبر Apple، ولا نرى بيانات بطاقتك أبداً. تستلم RevenueCat (الولايات المتحدة) إيصالات الشراء والمنتجات التي اشتريتها ومعرّفك المجهول (وهو معرّفك لدى RevenueCat) لإدارة اشتراكك، وتخبر خادمنا إن كنت مشتركاً أو في التجربة المجانية. وتستخدم RevenueCat هذه السجلات أيضاً لتعطينا إحصاءات عن الاشتراكات (مثل عدد من يبدأ الاشتراك أو يلغيه).</li>
-      <li><strong>عدّادات الاستخدام.</strong> لتطبيق الإطلالات الخمس في التجربة المجانية وحدود الاستخدام العادل، يعدّ خادمنا الإطلالات والتحليلات التي استخدمتها. ولمنع استخدام التجربة المجانية نفسها مرة أخرى بحذف الحساب أو إعادة التثبيت، نحتفظ أيضاً بعدّاد لكل عملية شراء بمعرّف مشفّر باتجاه واحد (hash) لا يحتوي على معرّفك، لمدة تصل إلى سنة، حتى بعد حذف حسابك.</li>
+      <li><strong>حساب مجهول.</strong> عند أول فتح ينشئ التطبيق حساباً مجهولاً لدى Supabase (خوادم في الاتحاد الأوروبي، أيرلندا). يحتوي على معرّف عشوائي وتاريخ الإنشاء، حتى تعمل المشتريات وحدود الاستخدام وتجاربك، وتسجّل Supabase أيضاً عنوان IP ونوع الجهاز لجلستك لأغراض الأمان. لا يحتوي على اسمك أو بريدك.</li>
+      <li><strong>المشتريات.</strong> جميع المدفوعات تتم عبر Apple، ولا نرى بيانات بطاقتك أبداً. تستلم RevenueCat (الولايات المتحدة) إيصالات الشراء والمنتجات التي اشتريتها ومعرّفك المجهول (وهو معرّفك لدى RevenueCat) ومعلومات أساسية عن الجهاز (إصدار iOS والتطبيق واللغة وبلد حساب App Store) لإدارة اشتراكك، وتخبر خادمنا إن كنت مشتركاً أو في التجربة المجانية. وتستخدم RevenueCat هذه السجلات أيضاً لتعطينا إحصاءات عن الاشتراكات (مثل عدد من يبدأ الاشتراك أو يلغيه).</li>
+      <li><strong>الاستخدام العادل.</strong> في الخطط المدفوعة حد يومي للاستخدام العادل (حتى 30 إطلالة في اليوم، وحد يومي منفصل للتحليلات)، حتى تبقى الخدمة سريعة للجميع.</li>
+      <li><strong>عدّادات الاستخدام.</strong> لتطبيق التجارب الخمس في الفترة المجانية وحدود الاستخدام العادل، يعدّ خادمنا الإطلالات والتحليلات التي استخدمتها. ولمنع استخدام التجربة المجانية نفسها مرة أخرى بحذف بياناتك أو إعادة التثبيت، نحتفظ أيضاً بعدّاد لكل عملية شراء برمز مُجزّأ (hash) لا يمكن عكسه ولا يحتوي على معرّفك، لمدة تصل إلى سنة، حتى بعد حذف بياناتك.</li>
     </ul>
 
     <h2>6. الملاحظات والدعم</h2>
-    <p>إذا أرسلت ملاحظة من التطبيق (الإعدادات ← الملاحظات)، نحفظ النوع الذي اخترته (مثل اقتراح أو مشكلة أو سؤال عن استرداد المبلغ)، ونصّك، وصور الشاشة التي ترفقها، ومعرّفك، وإصدار التطبيق، وطراز الجهاز وإصدار iOS، وبريدك الإلكتروني إن أضفته، حتى نتابع الموضوع ونرد عليك. تُحذف الملاحظات وصور الشاشة المرفقة بها بعد <strong>180 يوماً</strong>، أو قبل ذلك عند حذف حسابك. لا نستطيع ردّ المبالغ بأنفسنا: استرداد مبالغ مشتريات App Store يتم عبر Apple من <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. وعندما تراسلنا بالبريد، نحتفظ بالمراسلة طوال المدة اللازمة لمعالجة طلبك.</p>
+    <p>إذا أرسلت ملاحظة من التطبيق (الإعدادات ← «الملاحظات»)، نحفظ النوع الذي اخترته (اقتراح أو مشكلة أو سؤال عن استرداد المبلغ)، ونصّك، وصور الشاشة التي ترفقها (حتى 3)، ومعرّفك، وإصدار التطبيق، وإصدار iOS، حتى نتابع الموضوع. وإذا أبلغت عن نتيجة من شاشة عرض الصورة («إبلاغ عن الصورة»)، نحفظ أيضاً الإطلالة التي أبلغت عنها. لا يطلب النموذج بريدك الإلكتروني، وإذا أردت رداً راسلنا بالبريد. تُحذف الملاحظات وصور الشاشة المرفقة بها بعد <strong>180 يوماً</strong>، أو قبل ذلك عند حذف بياناتك من التطبيق. لا نستطيع ردّ المبالغ بأنفسنا: استرداد مبالغ مشتريات App Store يتم عبر Apple من <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. وعندما تراسلنا بالبريد، نحتفظ بالمراسلة طوال المدة اللازمة لمعالجة طلبك.</p>
 
     <h2>7. الإشعارات</h2>
     <p>قد يرسل التطبيق إشعارات محلية تُنشأ على جهازك (مثلاً ليخبرك أن إطلالتك جاهزة). ليس لدينا خادم إشعارات، ولا نرسل إشعارات تسويقية. يمكنك إيقاف الإشعارات من إعدادات جهازك.</p>
@@ -179,48 +180,47 @@
     <h2>9. لماذا نستخدم بياناتك (الأساس القانوني)</h2>
     <ul>
       <li><strong>لتقديم التطبيق واشتراكك</strong> (الحساب، المشتريات، استعادتها، التجارب والتحليلات، حفظ نتائجك، الرد على ملاحظاتك): تنفيذ العقد بيننا.</li>
-      <li><strong>إرسال صورتك إلى مزوّد الذكاء الاصطناعي</strong>: موافقتك التي تعطيها بزر الصورة. يمكنك التوقف في أي وقت بعدم إضافة صور جديدة، ولإزالة ما نحتفظ به احذف إطلالاتك من السجل أو احذف حسابك.</li>
+      <li><strong>إرسال صورتك إلى مزوّد الذكاء الاصطناعي</strong>: موافقتك التي تعطيها في كل مرة تضيف فيها صورة بالضغط على زر «موافق». يمكنك التوقف في أي وقت بعدم إضافة صور جديدة، ولإزالة ما نحتفظ به احذف إطلالاتك من «إطلالاتي» أو احذف بياناتك من التطبيق.</li>
       <li><strong>حدود الاستخدام، ومنع إساءة الاستخدام، والأمان، وعدّاد التجربة لكل عملية شراء</strong>: مصلحتنا المشروعة في الحفاظ على خدمة آمنة وبتكلفة معقولة. يمكنك الاعتراض بمراسلتنا.</li>
     </ul>
 
     <h2>10. من يستلم بياناتك</h2>
     <ul>
       <li><strong>OpenAI</strong> (الولايات المتحدة)، معالج الذكاء الاصطناعي لدينا: تنشئ صور التجربة وتحليلات شكل الوجه والألوان الموسمية، وتفحص الصور للتأكد من سلامتها.</li>
-      <li><strong>Supabase</strong> (خوادم في أوروبا): تستضيف حسابك، وتحفظ الصور المرفوعة والصور الناتجة في مجلدك الخاص، وسجلات التجارب، وعدّادات الاستخدام، والملاحظات وصور الشاشة، ورمز Apple المشفّر.</li>
+      <li><strong>Supabase</strong> (خوادم في الاتحاد الأوروبي، أيرلندا): تستضيف حسابك المجهول، وتحفظ الصور المرفوعة والصور الناتجة في مجلدك الخاص، وسجلات التجارب، وعدّادات الاستخدام، والملاحظات مع صور الشاشة.</li>
       <li><strong>Expo (EAS Hosting)</strong> وتعمل على شبكة Cloudflare: تشغّل كود خادمنا، وتمر عبرها صورك وطلباتك أثناء إرسالها. وتوصل Expo أيضاً تحديثات التطبيق: عندما يبحث التطبيق عن تحديث، تستلم Expo عنوان IP ونوع الجهاز وإصدار التطبيق ومعرّف تثبيت عشوائياً غير مرتبط بحسابك.</li>
       <li><strong>RevenueCat</strong> (الولايات المتحدة): تدير الاشتراكات، وتعطينا إحصاءات عن الاشتراكات.</li>
-      <li><strong>Apple</strong>: المدفوعات، وتسجيل الدخول بحساب Apple، ونافذة التقييم.</li>
+      <li><strong>Apple</strong>: المدفوعات ونافذة التقييم.</li>
     </ul>
-    <p>يعالج مزوّدونا البيانات وفق شروط معالجة البيانات الخاصة بهم. يحتفظ مزوّدو الاستضافة بسجلات طلبات عادية (مثل عنوان IP والوقت) لفترة محدودة وفق قواعدهم، ويستخدم خادمنا عنوان IP الخاص بك لحظياً للحد من إساءة الاستخدام ولا يحفظه. لا نكتب صورك أو نص ملاحظاتك في سجلاتنا. قد نكشف البيانات إذا طلب القانون ذلك.</p>
+    <p>يعالج مزوّدونا البيانات فقط لتقديم خدمتهم لنا، وفق شروط معالجة البيانات الخاصة بهم، وعليهم حمايتها بمستوى لا يقل عمّا تصفه هذه السياسة. يحتفظ مزوّدو الاستضافة بسجلات طلبات عادية (مثل عنوان IP والوقت) لفترة محدودة وفق قواعدهم، ويستخدم خادمنا عنوان IP الخاص بك لحظياً للحد من إساءة الاستخدام ولا يحفظه. لا نكتب صورك أو نص ملاحظاتك في سجلاتنا. قد نكشف البيانات إذا طلب القانون ذلك.</p>
 
     <h2>11. نقل البيانات خارج بلدك</h2>
     <p>نحن في الإمارات. تُحفظ بياناتك في أوروبا (Supabase)، وتُعالج في الولايات المتحدة ودول أخرى تعمل فيها OpenAI وRevenueCat وExpo وCloudflare وApple. حيث يتطلّب القانون ذلك (مثلاً للمستخدمين في الاتحاد الأوروبي أو المملكة المتحدة)، يعتمد هذا النقل على البنود التعاقدية القياسية لدى المزوّدين أو ضمانات معتمدة أخرى.</p>
 
     <h2>12. مدة الاحتفاظ بالبيانات</h2>
     <ul>
-      <li>الصور المرفوعة على خادمنا: 24 ساعة.</li>
-      <li>الصور الناتجة وسجلات التجارب على خادمنا: 30 يوماً، أو قبل ذلك عند حذف الإطلالة من السجل أو حذف حسابك.</li>
-      <li>الصور المرسلة لتحليل شكل الوجه أو الألوان الموسمية: لا تُحفظ على خادمنا.</li>
+      <li>الصور المرفوعة على خادمنا: حتى تنتهي الإطلالة (جاهزة أو مرفوضة أو فاشلة)، و24 ساعة كحد أقصى.</li>
+      <li>الصور الناتجة وسجلات التجارب (ومعها الجنس المرسل) على خادمنا: 30 يوماً، أو قبل ذلك عند حذف الإطلالة من «إطلالاتي» أو حذف بياناتك من التطبيق.</li>
+      <li>صور تحليل شكل الوجه أو الألوان الموسمية ونقاطها ونتائجها: لا تُحفظ على خادمنا. نحفظ فقط ملاحظة بأن الطلب قد حُسب (بدون بيانات للوجه)، لمدة أقصاها 48 ساعة.</li>
       <li>البيانات لدى OpenAI: حتى 30 يوماً.</li>
-      <li>البيانات على جهازك (السجل والإعدادات): حتى تحذفها، أو تحذف حسابك، أو تحذف التطبيق.</li>
-      <li>الحساب المجهول أو حساب Apple (واسمك إن شاركته): حتى تحذف حسابك.</li>
-      <li>عدّادات الاستخدام: حتى تنتهي مدتها (العدّادات اليومية: أيام قليلة، وعدّاد التجربة المجانية: حتى سنة). عدّادات التجربة لكل عملية شراء (مشفّرة، بدون معرّفك): حتى سنة، حتى بعد حذف الحساب.</li>
-      <li>الملاحظات وصور الشاشة: 180 يوماً، أو حتى تحذف حسابك إن كان ذلك أقرب.</li>
-      <li>رمز Apple المشفّر: حتى تحذف حسابك (ثم يُلغى ويُحذف).</li>
-      <li>سجلات الشراء لدى RevenueCat: حتى تحذف حسابك. وتحتفظ Apple بسجلات معاملاتها الخاصة.</li>
+      <li>البيانات على جهازك («إطلالاتي» والإعدادات): حتى تحذفها، أو تحذف بياناتك من التطبيق، أو تحذف التطبيق.</li>
+      <li>الحساب المجهول: حتى تحذف بياناتك من التطبيق.</li>
+      <li>عدّادات الاستخدام: حتى تنتهي مدتها (العدّادات اليومية: أيام قليلة، وعدّاد التجربة المجانية: حتى سنة). عدّادات التجربة لكل عملية شراء (برمز مُجزّأ، بدون معرّفك): حتى سنة، حتى بعد حذف بياناتك.</li>
+      <li>الملاحظات وصور الشاشة: 180 يوماً، أو حتى تحذف بياناتك من التطبيق إن كان ذلك أقرب.</li>
+      <li>سجلات الشراء لدى RevenueCat: حتى تحذف بياناتك من التطبيق. وتحتفظ Apple بسجلات معاملاتها الخاصة.</li>
       <li>سجلات طلبات الاستضافة: فترة محدودة يحددها كل مزوّد.</li>
     </ul>
 
     <h2>13. حقوقك وكيف تحذف بياناتك</h2>
     <p>بحسب مكان إقامتك (مثلاً في الاتحاد الأوروبي أو المملكة المتحدة)، يحق لك الوصول إلى بياناتك وتصحيحها وحذفها والحصول على نسخة منها، وتقييد استخدامها أو الاعتراض عليه، وسحب موافقتك في أي وقت (دون أن يؤثر ذلك على ما تم قبل السحب). ويحق لك أيضاً تقديم شكوى إلى هيئة حماية البيانات في بلدك. كيف تمارس هذه الحقوق:</p>
     <ul>
-      <li><strong>حذف إطلالة واحدة:</strong> داخل التطبيق، «إطلالاتي» ← السجل ← اضغط على أيقونة سلة المهملات على الإطلالة. يحذفها هذا من جهازك ويحذف صورتها الناتجة من خادمنا.</li>
-      <li><strong>حذف كل شيء:</strong> داخل التطبيق، الإعدادات ← حذف الحساب. يحذف هذا نهائياً حسابك، وسجلات تجاربك، وعدّادات الاستخدام (ما عدا عدّاد التجربة المشفّر لكل عملية شراء)، والملاحظات، وكل الصور والصور الناتجة وصور الشاشة في مجلدك، وسجلك لدى RevenueCat، ويلغي ربط حسابك بـ Apple. ويمسح أيضاً بيانات التطبيق والإشعارات المجدولة من جهازك. لا يلغي اشتراك App Store، ويمكنك إدارته من إعدادات Apple ID. لا يشمل الحذف النسخ التي تحتفظ بها OpenAI حتى 30 يوماً.</li>
+      <li><strong>حذف إطلالة واحدة:</strong> داخل التطبيق، «إطلالاتي» ← «تعديل» ← أيقونة سلة المهملات على الإطلالة ← «حذف». يحذفها هذا من جهازك، ويحذف صورتها الناتجة وسجلها من خادمنا.</li>
+      <li><strong>حذف كل شيء:</strong> داخل التطبيق، الإعدادات ← «حذف حسابي وبياناتي». يحذف هذا نهائياً حسابك، وسجلات تجاربك، وعدّادات الاستخدام (ما عدا عدّاد التجربة المُجزّأ لكل عملية شراء)، والملاحظات، وكل الصور والصور الناتجة وصور الشاشة في مجلدك، وسجلك لدى RevenueCat. ويمسح أيضاً بيانات التطبيق وصوره والإشعارات المجدولة من جهازك. لا يلغي اشتراك App Store، ويمكنك إدارته من إعدادات Apple ID. لا يشمل الحذف النسخ التي تحتفظ بها OpenAI حتى 30 يوماً.</li>
       <li><strong>أي طلب آخر</strong> (مثل نسخة من بياناتك): راسلنا على <a href="mailto:support@massalhafzco.com">support@massalhafzco.com</a>. لأن الحساب مجهول، قد نحتاج إلى معلومات من التطبيق لإيجاد بياناتك، والحذف من داخل التطبيق هو الأسرع. نرد خلال 30 يوماً.</li>
     </ul>
 
     <h2>14. الأمان</h2>
-    <p>تُرسل البيانات عبر اتصالات مشفّرة (HTTPS). تُحفظ صورك والصور الناتجة في مجلد تخزين خاص لا يصل إليه إلا خادمنا، ويستلم التطبيق الصورة الناتجة عبر رابط مؤقت (صالح لساعة واحدة). رمز Apple محفوظ مشفّراً. لا توجد وسيلة آمنة 100%، لذلك نحتفظ بالصور على خوادمنا أقصر مدة ممكنة.</p>
+    <p>تُرسل البيانات عبر اتصالات مشفّرة (HTTPS). تُحفظ صورك والصور الناتجة في مجلد تخزين خاص لا يصل إليه إلا خادمنا، ويستلم التطبيق الصورة الناتجة عبر رابط مؤقت (صالح لساعة واحدة). لا توجد وسيلة آمنة 100%، لذلك نحتفظ بالصور على خوادمنا أقصر مدة ممكنة.</p>
 
     <h2>15. العمر والأطفال</h2>
     <p>طلّتي للبالغين بعمر <strong>18 عاماً فأكثر</strong>. التطبيق ليس موجّهاً للأطفال، ولا نجمع عن قصد بيانات شخصية من أي شخص دون 18 عاماً. يُمنع رفع صور الأطفال، ويرفض التطبيق الصور التي يبدو أنها لطفل. إذا كنت تعتقد أن طفلاً استخدم التطبيق أو أن صورة طفل أُرسلت إلينا، تواصل معنا وسنحذفها.</p>
