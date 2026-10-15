@@ -9,7 +9,7 @@
 <body>
 <main>
   <h1>ديكوري – Privacy Policy</h1>
-  <p class="meta">Last updated: 14 October 2026 · <a href="#ar">العربية</a></p>
+  <p class="meta">Last updated: 15 October 2026 · <a href="#ar">العربية</a></p>
 
   <p>This policy covers the app "ديكوري – صمّم بيتك بالذكاء" (Decori). It explains what the app collects, why, who receives it, how long it is kept and how you can delete it. Decori lets you redesign your home with artificial intelligence (AI): you add a photo of a room, the outside of a house or a garden, choose what you want (for example a room type, a style and colours, a reference photo, an object to replace or things to remove), and the app shows you an AI-generated design of that space. It also has AI design assistants you can chat with. Results are AI suggestions for inspiration only. They are not architectural, engineering or safety advice, and real furniture, materials and colours may look different.</p>
 
@@ -24,7 +24,7 @@
     <li>To give the 3 free designs and the special offer only once per device, the app keeps a random device identifier in your iPhone's Keychain, and our server keeps only a one-way code (hash) of it, for up to 12 months (section 5).</li>
     <li>Your photos, designs and messages are never used to train AI, never used to recognise or identify anyone, and never used for advertising.</li>
     <li>Decori is for photos of spaces (rooms, houses, gardens), not of people.</li>
-    <li>No ads, no tracking, no advertising or analytics SDKs, and we never sell your data.</li>
+    <li>No ads in the app, and we never sell your data. To measure our ads, the app tells Meta (Facebook) about your install and a few steps in the app. If you allow it in Apple's "Allow tracking?" prompt, this includes your device's advertising identifier. If you don't allow it, Meta only gets these events in a limited form, without the advertising identifier, that it may use only in aggregated reports (see section 8).</li>
   </ul>
 
   <h2>3. Your photos and the AI</h2>
@@ -52,7 +52,7 @@
   <h2>5. Your account and purchases</h2>
   <ul>
     <li><strong>Anonymous account.</strong> On first launch the app creates an anonymous account with Supabase (servers in the EU, Ireland). It holds a random user ID and the date it was created, so that purchases, usage limits and your designs work; for security, Supabase also records the IP address and device type of your session. It does not contain your name or email.</li>
-    <li><strong>Purchases.</strong> Payments are handled by Apple; we never see your card details. RevenueCat (USA) receives your purchase receipts, your purchase history (the products you bought), your anonymous user ID (which is your RevenueCat customer ID) and basic device information (iOS and app version, language and App Store country) to manage your purchases, and tells our server whether you have a paid plan and which message packs you bought. RevenueCat also uses these records to give us purchase statistics (for example how many people start or cancel a subscription).</li>
+    <li><strong>Purchases.</strong> Payments are handled by Apple; we never see your card details. RevenueCat (USA) receives your purchase receipts, your purchase history (the products you bought), your anonymous user ID (which is your RevenueCat customer ID) and basic device information (iOS and app version, language and App Store country) to manage your purchases, and tells our server whether you have a paid plan and which message packs you bought. RevenueCat also uses these records to give us purchase statistics (for example how many people start or cancel a subscription). RevenueCat also tells Meta about your purchases (plan or pack, price, currency, time), linked to your device only if you allowed tracking (see section 8).</li>
     <li><strong>Free designs and fair use.</strong> Without a paid plan you get 3 free designs, with a watermark. Every paid plan (weekly, yearly and lifetime) has a fair-use limit of up to <strong>20 designs a day and 150 designs a month</strong> (a rolling 30 days), and includes up to <strong>20 messages a day</strong> with the design assistants, to keep the service fast for everyone.</li>
     <li><strong>Usage counters.</strong> To apply the free designs, the fair-use limits and the assistant messages, our server counts the designs and assistant messages you used and the messages left from message packs you bought. To keep the 3 free designs to one set per device, it also counts free designs against a one-way code (hash) made from a device identifier and a secret key. The device identifier is a random ID the app creates once (from Apple's identifierForVendor, never the advertising identifier) and keeps in your iPhone's Keychain, on this device only (it is not synced or backed up to other devices); it stays there even if you delete and reinstall the app. The app sends it with its requests, and our server never stores it, only the one-way code. The device code is also used for daily abuse limits (for example on designs refused after they were made and on checks of typed descriptions). For a few days it also counts free designs, typed-description checks and feedback per internet connection against a one-way code of your network address, never the address itself. Fair-use limits are also counted per purchase, under a one-way code of the purchase. All these codes are made with a secret key (salted), so they can't be turned back into the identifier, the address or the purchase. They are not stored with your account's data, but because the app sends the device identifier with requests made by your account (and a device code is kept next to a design while it is being made), we treat the device code as linked to you while you use the app. The device code is kept for up to 12 months, the IP code for up to 3 days and the purchase codes for up to 32 days, also after you delete your data, so deleting your data or reinstalling the app doesn't give new free designs.</li>
     <li><strong>Special offer.</strong> The yearly plan's special offer is Apple's introductory price for new subscribers (the first year at a lower price, paid once, then the normal yearly price). It is shown only if Apple says your Apple ID is eligible for it, for 30 minutes, once. To keep it to one time, our server records when the offer started and ended for your account and, the first time only, separately for the device code above. The device record is kept for up to 12 months from the start, also after you delete your data (it is no longer linked to you then).</li>
@@ -65,14 +65,24 @@
   <h2>7. Notifications</h2>
   <p>If you allow it, the app may send local notifications created on your device: if you leave the app while a design is being made, a reminder to come back and see it, or a note that it is ready. We have no push notification server and send no marketing notifications. You can turn notifications off in your device settings.</p>
 
-  <h2>8. No ads, no tracking, no analytics</h2>
-  <p>The app shows no ads, does not track you across other companies' apps or websites, does not ask for the iOS tracking permission and contains no advertising or analytics SDKs (no Meta/Facebook SDK, Google Analytics or similar). We don't sell your data and we don't share it with data brokers. The app may show Apple's own rating prompt. If this changes in a future version (for example, to measure our ads), we will update this policy before that version is released, and the app will ask for your permission where the law or Apple requires it. Your photos, designs and messages would never be shared for advertising.</p>
+  <h2>8. Ads measurement with Meta (no ads in the app, no analytics)</h2>
+  <p>The app shows no ads. We advertise Decori on Meta (Facebook, Instagram), and we use the Meta SDK, a tool from <strong>Meta Platforms</strong> (Meta Platforms Ireland Ltd. and Meta Platforms, Inc., USA), to see which of our ads bring new users and subscribers and to improve them.</p>
+  <ul>
+    <li><strong>Apple's prompt decides.</strong> During the first setup, after the demo screens and before the subscription screen, the app shows Apple's "Allow tracking?" prompt once. You can change your answer any time in iPhone Settings → Privacy &amp; Security → Tracking.</li>
+    <li><strong>If you allow tracking</strong>, the app sends Meta: that the app was installed and opened, that you finished the demo screens, that you saw a subscription screen and that you tapped a plan's or pack's buy button (with its product ID). With these events Meta receives your device's advertising identifier (IDFA), an ID that Meta creates for this app on your device, basic device data (model, iOS and app version, language, time zone) and your IP address.</li>
+    <li><strong>If you don't allow tracking</strong>, the app never reads the advertising identifier and tells the Meta SDK that tracking is off. The same events (install and open, demo screens finished, subscription screen seen, buy button tapped) are still sent to Meta in a <strong>limited form</strong>: without the advertising identifier and with "advertiser tracking" turned off, so Meta may use them only in aggregated, anonymous ad reports (Aggregated Event Measurement), not to build a profile of you or to link you to other apps and websites. Meta still receives basic device data and your IP address with them.</li>
+    <li><strong>Before you answer</strong> Apple's prompt, the app sends no events to Meta. The Meta SDK may still contact Meta to load its settings or report errors in the SDK itself; this includes technical data such as your IP address, device model and app version, but no advertising identifier and no information about what you do in the app.</li>
+    <li><strong>Purchases.</strong> The app itself never sends purchases to Meta. Our purchase provider RevenueCat sends Meta, server to server, when you buy or renew a plan or buy a message pack (product, price, currency, time). If you allowed tracking, these events are linked to Meta's ID for this app on your device (and RevenueCat also receives your advertising identifier); if you didn't, they are sent without any advertising or Meta ID, for aggregated reports only.</li>
+    <li>We never send Meta your photos, designs, the text you type, your assistant messages or your user ID, and we don't use Meta to show you ads inside the app. The device identifier described in section 5 is ours only and is never sent to Meta.</li>
+  </ul>
+  <p>We don't use any analytics SDK (no Google Analytics or similar), we don't sell your data and we don't share it with data brokers. The app may show Apple's own rating prompt.</p>
 
   <h2>9. Why we use your data (legal bases)</h2>
   <ul>
     <li><strong>To provide the app and your purchases</strong> (account, purchases, restoring purchases, designs, the assistants, storing your results, answering your feedback and reports): performance of our contract with you.</li>
     <li><strong>Sending your photos, text and messages to the AI provider</strong>: your consent, which you give by tapping a «موافق» button before you add a photo, and «موافق، أرسل» before your first message to the assistants. To withdraw your consent, stop adding photos or sending messages, and use «حذف حسابي وبياناتي» (Delete my account and data) in «الإعدادات» (Settings) to delete what we hold (or delete single designs in «السجل»).</li>
     <li><strong>Usage limits, the one-time free designs and special offer, abuse prevention and security</strong>: our legitimate interests in keeping the service safe and affordable. You can object by emailing us.</li>
+    <li><strong>Ads measurement with Meta</strong>: with the advertising identifier and Meta's ID for this app, your consent in Apple's tracking prompt (you can withdraw it in iPhone Settings → Privacy &amp; Security → Tracking); the limited, aggregated events without them, our legitimate interest in knowing which of our ads work.</li>
   </ul>
 
   <h2>10. Who receives your data</h2>
@@ -80,13 +90,14 @@
     <li><strong>OpenAI</strong> (USA), our AI processor: generates the designs and the assistants' answers, and checks photos, typed text, messages and generated designs for safety.</li>
     <li><strong>Supabase</strong> (servers in the EU, Ireland): hosts your anonymous account and stores, in your private folder, uploaded photos, generated designs and copies of designs you reported; it also stores design records, usage counters and special-offer records (including the one-way codes in section 5), message-pack balances, and feedback, ratings and reports. It does not store your assistant conversations.</li>
     <li><strong>Expo (EAS Hosting)</strong>, which runs on Cloudflare's network: runs our server code; your photos and requests pass through it in transit. Expo also delivers app updates: when the app checks for an update, Expo receives your IP address, the device platform and app version, and a random installation ID that is not linked to your account.</li>
-    <li><strong>RevenueCat</strong> (USA): manages purchases and gives us purchase statistics.</li>
+    <li><strong>RevenueCat</strong> (USA): manages purchases and gives us purchase statistics. It also sends your purchase events to Meta: linked to your device only if you allowed tracking, otherwise in limited, aggregated form (see section 8).</li>
+    <li><strong>Meta Platforms</strong> (Ireland and USA): receives the app events and purchase events described in section 8, to measure our ads; with the advertising identifier only if you allowed tracking, otherwise in limited form for aggregated reports only. Meta uses this data under its own terms and privacy policy (facebook.com/privacy/policy).</li>
     <li><strong>Apple</strong>: payments and the rating prompt.</li>
   </ul>
   <p>Our providers process data only to provide their service to us, under their data processing terms, and must protect it at least as well as this policy describes. Our hosting providers keep standard request logs (such as IP address and time) for a limited period under their own retention rules. Our server uses your IP address briefly to limit abuse and never stores it; for free designs it keeps only the one-way code described in section 5, for up to 3 days. We do not write your photos, messages or feedback text to our logs. We may disclose data if the law requires it.</p>
 
   <h2>11. International transfers</h2>
-  <p>We are based in the UAE. Your data is stored in the EU (Supabase) and processed in the USA and other countries where OpenAI, RevenueCat, Expo, Cloudflare and Apple operate. Where the law requires it (for example for users in the EU or UK), these transfers rely on the providers' Standard Contractual Clauses or other approved safeguards.</p>
+  <p>We are based in the UAE. Your data is stored in the EU (Supabase) and processed in the USA and other countries where OpenAI, RevenueCat, Expo, Cloudflare, Apple and Meta operate. Where the law requires it (for example for users in the EU or UK), these transfers rely on the providers' Standard Contractual Clauses or other approved safeguards.</p>
 
   <h2>12. How long we keep data</h2>
   <ul>
@@ -99,6 +110,8 @@
     <li>One-way device code: up to 12 months; the device's special-offer record: up to 12 months from the offer's start; IP code: up to 3 days; purchase codes: up to 32 days; message-pack purchase codes: up to 12 months. These are kept also after you delete your data, and are no longer linked to you then.</li>
     <li>Feedback, ratings, reports and copies of reported designs: 180 days, or until you delete your data in the app if that is sooner.</li>
     <li>Purchase records at RevenueCat: until you delete your data in the app, or until your account is removed after 12 months without use (the RevenueCat record is then deleted too, usually within a few days). Apple keeps its own transaction records.</li>
+    <li>Meta's ID for this app on your device, kept by RevenueCat (only if you allowed tracking): until you delete your data in the app; it is removed at the next app start if you turn tracking off.</li>
+    <li>Data at Meta: as long as Meta's own terms and privacy policy allow; we can't delete it for you (you can ask Meta).</li>
     <li>Hosting request logs: a limited period set by each provider.</li>
   </ul>
 
@@ -107,6 +120,7 @@
   <ul>
     <li><strong>Delete one design:</strong> in the app, open «السجل» (History) › «التصاميم» (Designs), tap «تحديد» (Select), select the design and tap «حذف» (Delete). This deletes it from your device, and its generated image, uploads and record from our server.</li>
     <li><strong>Delete everything:</strong> in the app, «الإعدادات» (Settings) → «حذف حسابي وبياناتي» (Delete my account and data). This permanently deletes your anonymous account and its sign-in records, your design records, your usage counters, your special-offer record, your message-pack balance, your feedback, ratings and reports, all photos, designs and copies of reported designs in your folder, and your RevenueCat customer record. It also wipes the app's data on your device (designs, conversations, settings and scheduled notifications). Unused messages from message packs are lost. Kept on purpose, no longer linked to you: only salted one-way codes that can't be reversed and carry no name or content (this device's free-design counter, this device's special-offer record and the message-pack purchase records, separated from your account), so free designs and the offer aren't repeated and bought messages aren't credited twice; they are deleted automatically at the end of the periods in section 5 (12 months at most). The random device identifier also stays in your iPhone's Keychain; it carries no information about you. It does not cancel an App Store subscription: manage that in your Apple ID settings; to use your plan again in the app, tap «استعادة المشتريات» (Restore purchases) in «الإعدادات». Copies kept by OpenAI for up to 30 days are not affected.</li>
+    <li><strong>Stop ads measurement:</strong> iPhone Settings → Privacy &amp; Security → Tracking → turn off Decori. From the next app start the advertising identifier is no longer used, RevenueCat removes Meta's ID from your purchase record, and Meta only gets the limited, aggregated events described in section 8. Data Meta already received stays under Meta's terms.</li>
     <li><strong>Anything else</strong> (for example a copy of your data): email <a href="mailto:support@massalhafzco.com">support@massalhafzco.com</a>. Because the account is anonymous, we may need details from the app to find your data (Settings shows your user ID); in-app deletion is the fastest way. We reply within 30 days.</li>
   </ul>
 
@@ -126,7 +140,7 @@
 
   <section id="ar" dir="rtl" lang="ar">
     <h1>سياسة الخصوصية لتطبيق ديكوري</h1>
-    <p class="meta">آخر تحديث: 14 أكتوبر 2026</p>
+    <p class="meta">آخر تحديث: 15 أكتوبر 2026</p>
 
     <p>تشرح هذه السياسة ما يجمعه تطبيق "ديكوري – صمّم بيتك بالذكاء"، ولماذا، ومن يستلمه، ومدة الاحتفاظ به، وكيف تحذفه. يتيح لك ديكوري إعادة تصميم بيتك بالذكاء الاصطناعي: تضيف صورة لغرفة أو لواجهة بيت أو لحديقة، وتختار ما تريده (مثل نوع الغرفة، والستايل والألوان، أو صورة مرجعية، أو قطعة تريد استبدالها، أو أغراضاً تريد إزالتها)، فيعرض لك التطبيق تصميماً جديداً لهذا المكان من إنتاج الذكاء الاصطناعي. وفيه أيضاً مساعدو تصميم أذكياء يمكنك محادثتهم. النتائج اقتراحات من الذكاء الاصطناعي للإلهام فقط، وليست نصيحة هندسية أو معمارية أو نصيحة سلامة، وقد يختلف شكل الأثاث والمواد والألوان في الواقع.</p>
 
@@ -141,7 +155,7 @@
       <li>لنعطي التصاميم المجانية الثلاثة والعرض الخاص مرة واحدة لكل جهاز، يحفظ التطبيق معرّفاً عشوائياً للجهاز في سلسلة مفاتيح الآيفون (Keychain)، ولا يحتفظ خادمنا إلا برمز مُجزّأ (hash) منه لا يمكن عكسه، حتى 12 شهراً (القسم 5).</li>
       <li>لا تُستخدم صورك وتصاميمك ورسائلك أبداً لتدريب الذكاء الاصطناعي، ولا للتعرّف على أي شخص، ولا للإعلانات.</li>
       <li>ديكوري لصور الأماكن (الغرف والبيوت والحدائق)، وليس لصور الأشخاص.</li>
-      <li>لا إعلانات، ولا تتبّع، ولا أدوات إعلانات أو تحليلات، ولا نبيع بياناتك أبداً.</li>
+      <li>لا إعلانات داخل التطبيق، ولا نبيع بياناتك أبداً. لنقيس نتائج إعلاناتنا، يخبر التطبيق شركة Meta (فيسبوك) بتثبيت التطبيق وببعض الخطوات داخله. إذا سمحت بذلك في نافذة Apple "السماح بالتتبّع؟"، يشمل ذلك معرّف الإعلانات لجهازك. وإذا لم تسمح، تستلم Meta هذه الأحداث بشكل محدود فقط، دون معرّف الإعلانات، ولا يحق لها استخدامها إلا في تقارير إجمالية (انظر القسم 8).</li>
     </ul>
 
     <h2>3. صورك والذكاء الاصطناعي</h2>
@@ -169,7 +183,7 @@
     <h2>5. حسابك ومشترياتك</h2>
     <ul>
       <li><strong>حساب مجهول.</strong> عند أول فتح ينشئ التطبيق حساباً مجهولاً لدى Supabase (خوادم في الاتحاد الأوروبي، أيرلندا). يحتوي على معرّف عشوائي وتاريخ الإنشاء، حتى تعمل المشتريات وحدود الاستخدام وتصاميمك، وتسجّل Supabase أيضاً عنوان IP ونوع الجهاز لجلستك لأغراض الأمان. لا يحتوي على اسمك أو بريدك.</li>
-      <li><strong>المشتريات.</strong> جميع المدفوعات تتم عبر Apple، ولا نرى بيانات بطاقتك أبداً. تستلم RevenueCat (الولايات المتحدة) إيصالات الشراء وسجل مشترياتك (المنتجات التي اشتريتها) ومعرّفك المجهول (وهو معرّفك لدى RevenueCat) ومعلومات أساسية عن الجهاز (إصدار iOS والتطبيق واللغة وبلد حساب App Store) لإدارة مشترياتك، وتخبر خادمنا إن كانت لديك خطة مدفوعة وما هي باقات الرسائل التي اشتريتها. وتستخدم RevenueCat هذه السجلات أيضاً لتعطينا إحصاءات عن المشتريات (مثل عدد من يبدأ الاشتراك أو يلغيه).</li>
+      <li><strong>المشتريات.</strong> جميع المدفوعات تتم عبر Apple، ولا نرى بيانات بطاقتك أبداً. تستلم RevenueCat (الولايات المتحدة) إيصالات الشراء وسجل مشترياتك (المنتجات التي اشتريتها) ومعرّفك المجهول (وهو معرّفك لدى RevenueCat) ومعلومات أساسية عن الجهاز (إصدار iOS والتطبيق واللغة وبلد حساب App Store) لإدارة مشترياتك، وتخبر خادمنا إن كانت لديك خطة مدفوعة وما هي باقات الرسائل التي اشتريتها. وتستخدم RevenueCat هذه السجلات أيضاً لتعطينا إحصاءات عن المشتريات (مثل عدد من يبدأ الاشتراك أو يلغيه). وتخبر RevenueCat شركة Meta أيضاً بمشترياتك (الخطة أو الباقة والسعر والعملة والوقت)، مرتبطةً بجهازك فقط إذا سمحت بالتتبّع (انظر القسم 8).</li>
       <li><strong>التصاميم المجانية والاستخدام العادل.</strong> بدون خطة مدفوعة تحصل على 3 تصاميم مجانية، عليها علامة مائية. وفي كل خطة مدفوعة (الأسبوعية والسنوية ومدى الحياة) حد للاستخدام العادل: <strong>حتى 20 تصميماً في اليوم و150 تصميماً في الشهر</strong> (آخر 30 يوماً)، ومعها <strong>حتى 20 رسالة يومياً</strong> مع مساعدي التصميم، حتى تبقى الخدمة سريعة للجميع.</li>
       <li><strong>عدّادات الاستخدام.</strong> لتطبيق التصاميم المجانية وحدود الاستخدام العادل ورسائل المساعدين، يعدّ خادمنا التصاميم ورسائل المساعدين التي استخدمتها، والرسائل المتبقية من باقات الرسائل التي اشتريتها. ولتبقى التصاميم المجانية الثلاثة مرة واحدة لكل جهاز، يعدّها أيضاً على رمز مُجزّأ (hash) لا يمكن عكسه، مصنوع من معرّف للجهاز ومن مفتاح سرّي. معرّف الجهاز رقم عشوائي ينشئه التطبيق مرة واحدة (من معرّف identifierForVendor من Apple، وليس أبداً معرّف الإعلانات)، ويحفظه في سلسلة مفاتيح الآيفون (Keychain) على هذا الجهاز فقط (لا يُزامَن ولا يُنسخ احتياطياً إلى أجهزة أخرى)، ويبقى فيها حتى إذا حذفت التطبيق وأعدت تثبيته. يرسله التطبيق مع طلباته، ولا يحفظه خادمنا أبداً، بل يحفظ الرمز المُجزّأ فقط. ويُستخدم رمز الجهاز أيضاً لحدود يومية لمنع إساءة الاستخدام (مثل التصاميم المرفوضة بعد إنشائها وفحص الأوصاف المكتوبة). ويعدّ خادمنا أيضاً، لبضعة أيام، التصاميم المجانية وفحوص الأوصاف المكتوبة والملاحظات لكل اتصال إنترنت، على رمز مُجزّأ من عنوان شبكتك وليس العنوان نفسه. وتُعدّ حدود الاستخدام العادل أيضاً لكل عملية شراء، على رمز مُجزّأ لعملية الشراء. كل هذه الرموز مصنوعة بمفتاح سرّي (مملّحة)، فلا يمكن عكسها إلى المعرّف أو العنوان أو عملية الشراء. وهي لا تُحفظ مع بيانات حسابك، لكن لأن التطبيق يرسل معرّف الجهاز مع طلبات حسابك (ويُحفظ رمز الجهاز بجانب التصميم أثناء إعداده)، نعامل رمز الجهاز على أنه مرتبط بك ما دمت تستخدم التطبيق. يُحفظ رمز الجهاز حتى 12 شهراً، ورمز IP حتى 3 أيام، ورموز الشراء حتى 32 يوماً، حتى بعد حذف بياناتك، حتى لا يمنح حذف البيانات أو إعادة تثبيت التطبيق تصاميم مجانية جديدة.</li>
       <li><strong>العرض الخاص.</strong> العرض الخاص للخطة السنوية هو السعر التمهيدي من Apple للمشتركين الجدد (السنة الأولى بسعر أقل يُدفع مرة واحدة، ثم السعر السنوي العادي). ولا يظهر إلا إذا كانت Apple تعتبر حساب Apple الخاص بك مؤهلاً له، لمدة 30 دقيقة، مرة واحدة. وليبقى مرة واحدة، يسجّل خادمنا وقت بداية العرض ونهايته لحسابك، وفي المرة الأولى فقط بشكل منفصل لرمز الجهاز المذكور أعلاه. يُحفظ سجل الجهاز حتى 12 شهراً من بداية العرض، حتى بعد حذف بياناتك (ولا يبقى مرتبطاً بك بعد الحذف).</li>
@@ -182,14 +196,24 @@
     <h2>7. الإشعارات</h2>
     <p>إذا سمحت بذلك، قد يرسل التطبيق إشعارات محلية تُنشأ على جهازك: إذا خرجت من التطبيق أثناء إنشاء تصميم، تذكيراً لتعود وتراه، أو تنبيهاً بأنه جاهز. ليس لدينا خادم إشعارات، ولا نرسل إشعارات تسويقية. يمكنك إيقاف الإشعارات من إعدادات جهازك.</p>
 
-    <h2>8. لا إعلانات ولا تتبّع ولا تحليلات</h2>
-    <p>لا يعرض التطبيق إعلانات، ولا يتتبّعك عبر تطبيقات أو مواقع الشركات الأخرى، ولا يطلب إذن التتبّع في iOS، ولا يحتوي على أي أدوات إعلانات أو تحليلات (لا أداة Meta/فيسبوك، ولا Google Analytics، ولا ما يشبهها). لا نبيع بياناتك ولا نشاركها مع وسطاء البيانات. قد يعرض التطبيق نافذة التقييم الخاصة بـ Apple. إذا تغيّر ذلك في إصدار قادم (مثلاً لقياس إعلاناتنا)، سنحدّث هذه السياسة قبل صدور ذلك الإصدار، وسيطلب التطبيق إذنك حيث يتطلّب القانون أو Apple ذلك. ولن تُشارك صورك وتصاميمك ورسائلك أبداً لأغراض إعلانية.</p>
+    <h2>8. قياس الإعلانات مع Meta (لا إعلانات داخل التطبيق ولا تحليلات)</h2>
+    <p>لا يعرض التطبيق إعلانات. نحن نعلن عن ديكوري على منصات Meta (فيسبوك وإنستغرام)، ونستخدم أداة Meta SDK من شركة <strong>Meta Platforms</strong> (Meta Platforms Ireland Ltd. وMeta Platforms, Inc. في الولايات المتحدة) لنعرف أي إعلاناتنا تجلب مستخدمين ومشتركين جدداً ولنحسّنها.</p>
+    <ul>
+      <li><strong>نافذة Apple هي التي تقرّر.</strong> أثناء الإعداد الأول، بعد الشاشات التعريفية وقبل شاشة الاشتراك، يعرض التطبيق نافذة Apple "السماح بالتتبّع؟" مرة واحدة. ويمكنك تغيير إجابتك في أي وقت من إعدادات iPhone ← الخصوصية والأمن ← التتبّع.</li>
+      <li><strong>إذا سمحت بالتتبّع</strong>، يرسل التطبيق إلى Meta: أن التطبيق ثُبّت وفُتح، وأنك أنهيت الشاشات التعريفية، وأنك رأيت شاشة اشتراك، وأنك ضغطت زر الشراء لخطة أو باقة (مع رمز المنتج). ومع هذه الأحداث تستلم Meta معرّف الإعلانات لجهازك (IDFA)، ومعرّفاً تنشئه Meta لهذا التطبيق على جهازك، وبيانات أساسية عن الجهاز (الطراز، وإصدار iOS والتطبيق، واللغة، والمنطقة الزمنية)، وعنوان IP.</li>
+      <li><strong>إذا لم تسمح بالتتبّع</strong>، لا يقرأ التطبيق معرّف الإعلانات أبداً، ويخبر أداة Meta SDK بأن التتبّع متوقف. وتُرسل الأحداث نفسها (تثبيت التطبيق وفتحه، وإنهاء الشاشات التعريفية، ورؤية شاشة الاشتراك، والضغط على زر الشراء) إلى Meta <strong>بشكل محدود</strong>: دون معرّف الإعلانات ومع إيقاف "تتبّع المعلن"، فلا يحق لـ Meta استخدامها إلا في تقارير إعلانية إجمالية مجهولة الهوية (Aggregated Event Measurement)، لا لبناء ملف عنك ولا لربطك بتطبيقات ومواقع أخرى. وتستلم Meta معها بيانات أساسية عن الجهاز وعنوان IP.</li>
+      <li><strong>قبل أن تجيب</strong> على نافذة Apple، لا يرسل التطبيق أي حدث إلى Meta. وقد تتصل أداة Meta SDK بـ Meta لتحميل إعداداتها أو للإبلاغ عن أخطاء في الأداة نفسها، ويشمل ذلك بيانات تقنية مثل عنوان IP وطراز الجهاز وإصدار التطبيق، دون معرّف الإعلانات ودون أي معلومات عمّا تفعله في التطبيق.</li>
+      <li><strong>المشتريات.</strong> التطبيق نفسه لا يرسل المشتريات إلى Meta أبداً. يرسل مزوّد المشتريات RevenueCat إلى Meta، من خادم إلى خادم، شراء خطة أو تجديدها وشراء باقة رسائل (المنتج والسعر والعملة والوقت). إذا سمحت بالتتبّع، ترتبط هذه الأحداث بمعرّف Meta لهذا التطبيق على جهازك (وتستلم RevenueCat أيضاً معرّف الإعلانات)؛ وإذا لم تسمح، تُرسل دون أي معرّف إعلانات أو معرّف من Meta، للتقارير الإجمالية فقط.</li>
+      <li>لا نرسل إلى Meta أبداً صورك أو تصاميمك أو النصوص التي تكتبها أو رسائلك إلى المساعدين أو معرّف المستخدم، ولا نستخدم Meta لعرض إعلانات لك داخل التطبيق. ومعرّف الجهاز الموصوف في القسم 5 خاص بنا ولا يُرسل إلى Meta أبداً.</li>
+    </ul>
+    <p>لا نستخدم أي أداة تحليلات (لا Google Analytics ولا ما يشبهها)، ولا نبيع بياناتك ولا نشاركها مع وسطاء البيانات. قد يعرض التطبيق نافذة التقييم الخاصة بـ Apple.</p>
 
     <h2>9. لماذا نستخدم بياناتك (الأساس القانوني)</h2>
     <ul>
       <li><strong>لتقديم التطبيق ومشترياتك</strong> (الحساب، المشتريات، استعادتها، التصاميم، المساعدون، حفظ نتائجك، الرد على ملاحظاتك وبلاغاتك): تنفيذ العقد بيننا.</li>
       <li><strong>إرسال صورك ونصوصك ورسائلك إلى مزوّد الذكاء الاصطناعي</strong>: موافقتك التي تعطيها بالضغط على زر «موافق» قبل إضافة صورة، وعلى «موافق، أرسل» قبل رسالتك الأولى إلى المساعدين. لسحب موافقتك، توقّف عن إضافة الصور وإرسال الرسائل، واستخدم «حذف حسابي وبياناتي» في «الإعدادات» لحذف ما نحتفظ به (أو احذف تصاميم بعينها من «السجل»).</li>
       <li><strong>حدود الاستخدام، وإعطاء التصاميم المجانية والعرض الخاص مرة واحدة، ومنع إساءة الاستخدام، والأمان</strong>: مصلحتنا المشروعة في الحفاظ على خدمة آمنة وبتكلفة معقولة. يمكنك الاعتراض بمراسلتنا.</li>
+      <li><strong>قياس الإعلانات مع Meta</strong>: مع معرّف الإعلانات ومعرّف Meta لهذا التطبيق، موافقتك في نافذة التتبّع من Apple (ويمكنك سحبها من إعدادات iPhone ← الخصوصية والأمن ← التتبّع)؛ أما الأحداث المحدودة الإجمالية من دونهما، فمصلحتنا المشروعة في معرفة أي إعلاناتنا تنجح.</li>
     </ul>
 
     <h2>10. من يستلم بياناتك</h2>
@@ -197,13 +221,14 @@
       <li><strong>OpenAI</strong> (الولايات المتحدة)، معالج الذكاء الاصطناعي لدينا: تنشئ التصاميم وردود المساعدين، وتفحص الصور والنصوص المكتوبة والرسائل والتصاميم الناتجة للتأكد من سلامتها.</li>
       <li><strong>Supabase</strong> (خوادم في الاتحاد الأوروبي، أيرلندا): تستضيف حسابك المجهول، وتحفظ في مجلدك الخاص الصور المرفوعة والتصاميم الناتجة ونسخ التصاميم التي أبلغت عنها، وتحفظ أيضاً سجلات التصاميم، وعدّادات الاستخدام وسجلات العرض الخاص (ومنها الرموز المُجزّأة في القسم 5)، ورصيد باقات الرسائل، والملاحظات والتقييمات والبلاغات. ولا تحفظ محادثاتك مع المساعدين.</li>
       <li><strong>Expo (EAS Hosting)</strong> وتعمل على شبكة Cloudflare: تشغّل كود خادمنا، وتمر عبرها صورك وطلباتك أثناء إرسالها. وتوصل Expo أيضاً تحديثات التطبيق: عندما يبحث التطبيق عن تحديث، تستلم Expo عنوان IP ونوع الجهاز وإصدار التطبيق ومعرّف تثبيت عشوائياً غير مرتبط بحسابك.</li>
-      <li><strong>RevenueCat</strong> (الولايات المتحدة): تدير المشتريات، وتعطينا إحصاءات عنها.</li>
+      <li><strong>RevenueCat</strong> (الولايات المتحدة): تدير المشتريات، وتعطينا إحصاءات عنها. وترسل أيضاً أحداث مشترياتك إلى Meta: مرتبطة بجهازك فقط إذا سمحت بالتتبّع، وإلا فبشكل محدود إجمالي (انظر القسم 8).</li>
+      <li><strong>Meta Platforms</strong> (أيرلندا والولايات المتحدة): تستلم أحداث التطبيق وأحداث الشراء الموصوفة في القسم 8، لقياس إعلاناتنا؛ مع معرّف الإعلانات فقط إذا سمحت بالتتبّع، وإلا فبشكل محدود للتقارير الإجمالية فقط. وتستخدم Meta هذه البيانات وفق شروطها وسياسة الخصوصية الخاصة بها (facebook.com/privacy/policy).</li>
       <li><strong>Apple</strong>: المدفوعات ونافذة التقييم.</li>
     </ul>
     <p>يعالج مزوّدونا البيانات فقط لتقديم خدمتهم لنا، وفق شروط معالجة البيانات الخاصة بهم، وعليهم حمايتها بمستوى لا يقل عمّا تصفه هذه السياسة. يحتفظ مزوّدو الاستضافة بسجلات طلبات عادية (مثل عنوان IP والوقت) لفترة محدودة وفق قواعدهم. ويستخدم خادمنا عنوان IP الخاص بك لحظياً للحد من إساءة الاستخدام ولا يحفظه أبداً، وفي التصاميم المجانية يحتفظ فقط بالرمز المُجزّأ الموصوف في القسم 5، حتى 3 أيام. لا نكتب صورك أو رسائلك أو نص ملاحظاتك في سجلاتنا. قد نكشف البيانات إذا طلب القانون ذلك.</p>
 
     <h2>11. نقل البيانات خارج بلدك</h2>
-    <p>نحن في الإمارات. تُحفظ بياناتك في أوروبا (Supabase)، وتُعالج في الولايات المتحدة ودول أخرى تعمل فيها OpenAI وRevenueCat وExpo وCloudflare وApple. حيث يتطلّب القانون ذلك (مثلاً للمستخدمين في الاتحاد الأوروبي أو المملكة المتحدة)، يعتمد هذا النقل على البنود التعاقدية القياسية لدى المزوّدين أو ضمانات معتمدة أخرى.</p>
+    <p>نحن في الإمارات. تُحفظ بياناتك في أوروبا (Supabase)، وتُعالج في الولايات المتحدة ودول أخرى تعمل فيها OpenAI وRevenueCat وExpo وCloudflare وApple وMeta. حيث يتطلّب القانون ذلك (مثلاً للمستخدمين في الاتحاد الأوروبي أو المملكة المتحدة)، يعتمد هذا النقل على البنود التعاقدية القياسية لدى المزوّدين أو ضمانات معتمدة أخرى.</p>
 
     <h2>12. مدة الاحتفاظ بالبيانات</h2>
     <ul>
@@ -216,6 +241,8 @@
       <li>رمز الجهاز المُجزّأ: حتى 12 شهراً، وسجل العرض الخاص للجهاز: حتى 12 شهراً من بداية العرض، ورمز IP: حتى 3 أيام، ورموز الشراء: حتى 32 يوماً، ورموز شراء باقات الرسائل: حتى 12 شهراً. تبقى هذه الرموز حتى بعد حذف بياناتك، ولا تبقى مرتبطة بك بعد الحذف.</li>
       <li>الملاحظات والتقييمات والبلاغات ونسخ التصاميم المبلّغ عنها: 180 يوماً، أو حتى تحذف بياناتك من التطبيق إن كان ذلك أقرب.</li>
       <li>سجلات الشراء لدى RevenueCat: حتى تحذف بياناتك من التطبيق، أو حتى يُحذف حسابك بعد 12 شهراً بدون استخدام (ويُحذف سجل RevenueCat معه، عادةً خلال أيام قليلة). وتحتفظ Apple بسجلات معاملاتها الخاصة.</li>
+      <li>معرّف Meta لهذا التطبيق على جهازك، المحفوظ لدى RevenueCat (إذا سمحت بالتتبّع فقط): حتى تحذف بياناتك من التطبيق، ويُزال عند فتح التطبيق التالي إذا أوقفت التتبّع.</li>
+      <li>البيانات لدى Meta: المدة التي تسمح بها شروط Meta وسياسة الخصوصية الخاصة بها، ولا نستطيع حذفها نيابة عنك (يمكنك طلب ذلك من Meta).</li>
       <li>سجلات طلبات الاستضافة: فترة محدودة يحددها كل مزوّد.</li>
     </ul>
 
@@ -224,6 +251,7 @@
     <ul>
       <li><strong>حذف تصميم واحد:</strong> داخل التطبيق، افتح «السجل» ← «التصاميم»، واضغط «تحديد»، ثم اختر التصميم واضغط «حذف». يحذفه هذا من جهازك، ويحذف صورته الناتجة وصوره المرفوعة وسجله من خادمنا.</li>
       <li><strong>حذف كل شيء:</strong> داخل التطبيق، «الإعدادات» ← «حذف حسابي وبياناتي». يحذف هذا نهائياً حسابك المجهول وسجلات دخوله، وسجلات تصاميمك، وعدّادات استخدامك، وسجل العرض الخاص لحسابك، ورصيد باقات الرسائل، وملاحظاتك وتقييماتك وبلاغاتك، وكل الصور والتصاميم ونسخ التصاميم المبلّغ عنها في مجلدك، وسجلك لدى RevenueCat. ويمسح أيضاً بيانات التطبيق من جهازك (التصاميم والمحادثات والإعدادات والإشعارات المجدولة). وتضيع الرسائل غير المستخدمة من باقات الرسائل. ونحتفظ عمداً فقط برموز مُجزّأة مملّحة لا يمكن عكسها ولا تحمل اسمك ولا محتواك (عدّاد التصاميم المجانية لهذا الجهاز، وسجل العرض الخاص لهذا الجهاز، وسجلات شراء باقات الرسائل بعد فصلها عن حسابك)، حتى لا تتكرر التصاميم المجانية أو العرض ولا تُضاف الرسائل المشتراة مرتين، وتُحذف تلقائياً بعد انتهاء المدد المذكورة في القسم 5 (12 شهراً كحد أقصى)، ولا تبقى مرتبطة بك. ويبقى معرّف الجهاز العشوائي في سلسلة مفاتيح الآيفون، ولا يحمل أي معلومات عنك. لا يلغي الحذف اشتراك App Store، ويمكنك إدارته من إعدادات Apple ID، ولتستخدم خطتك في التطبيق مرة أخرى اضغط «استعادة المشتريات» في «الإعدادات». لا يشمل الحذف النسخ التي تحتفظ بها OpenAI حتى 30 يوماً.</li>
+      <li><strong>إيقاف قياس الإعلانات:</strong> إعدادات iPhone ← الخصوصية والأمن ← التتبّع ← أوقف ديكوري. من فتح التطبيق التالي لا يُستخدم معرّف الإعلانات، وتزيل RevenueCat معرّف Meta من سجل مشترياتك، ولا تستلم Meta إلا الأحداث المحدودة الإجمالية الموصوفة في القسم 8. أما البيانات التي استلمتها Meta من قبل فتبقى وفق شروط Meta.</li>
       <li><strong>أي طلب آخر</strong> (مثل نسخة من بياناتك): راسلنا على <a href="mailto:support@massalhafzco.com">support@massalhafzco.com</a>. لأن الحساب مجهول، قد نحتاج إلى معلومات من التطبيق لإيجاد بياناتك (تجد رقم المستخدم في «الإعدادات»)، والحذف من داخل التطبيق هو الأسرع. نرد خلال 30 يوماً.</li>
     </ul>
 
